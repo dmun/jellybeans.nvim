@@ -2,7 +2,7 @@
 
 A port of the jellybeans colorscheme for Neovim, written in Lua.
 
-**Note:** This colorscheme is still a work in progress. If you find any issues, please report them. Pull requests are welcome!
+**Note:** This colorscheme is very much a work in progress so breaking changes should be expected. If you find any issues, please report them. I don't have a lot of experience with colorschemes so pull requests are welcome.
 
 ![jellybeans](./images/theme.png)
 
