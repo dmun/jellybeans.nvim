@@ -33,8 +33,6 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 - Lualine
 - and more...
 
-## 🔌 Plugin Support
-
 ### Lualine
 
 The theme includes a [Lualine](https://github.com/nvim-lualine/lualine.nvim) theme. To enable it:
@@ -47,12 +45,11 @@ require('lualine').setup {
 }
 ```
 
-Or load it directly:
+## Inspirations
 
-```lua
-require('lualine').setup {
-    options = {
-        theme = require('jellybeans.themes.lualine')
-    }
-}
-```
+- [jellybeans.vim](https://github.com/nanotech/jellybeans.vim) For the original colorscheme
+- [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) For the initial port
+
+## Acknowledgements
+
+- [tokyonight.nvim](https://gitub.com/folke/tokyonight.nvim)

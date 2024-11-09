@@ -1,3 +1,4 @@
+---@class Palette
 return {
 	foreground = "#e8e8d3",
 	background = "#151515",
