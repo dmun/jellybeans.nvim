@@ -51,9 +51,9 @@ require('lualine').setup {
 
 ## Inspirations
 
-- [jellybeans.vim](https://github.com/nanotech/jellybeans.vim) For the original colorscheme
-- [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) For the initial port
+- [jellybeans.vim](https://github.com/nanotech/jellybeans.vim)
 
 ## Acknowledgements
 
 - [tokyonight.nvim](https://gitub.com/folke/tokyonight.nvim)
+- [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim)
