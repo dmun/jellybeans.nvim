@@ -1,0 +1,48 @@
+local M = {}
+
+function M.get()
+	return {
+		Normal = { fg = C.foreground, bg = C.background },
+		NormalFloat = { fg = C.foreground, bg = C.cod_grey },
+		ColorColumn = { bg = C.total_black },
+		Conceal = { fg = C.morning_glory },
+		Cursor = { fg = C.background, bg = C.brandy },
+		CursorColumn = { bg = C.grey_one },
+		CursorLine = { bg = C.grey_one },
+		Directory = { fg = C.brandy },
+		DiffAdd = { fg = C.tea_green, bg = C.dell },
+		DiffChange = { bg = C.calypso },
+		DiffDelete = { fg = C.temptress, bg = C.purple },
+		DiffText = { fg = C.morning_glory, bg = C.total_black },
+		ErrorMsg = { bg = C.old_brick },
+		VertSplit = { fg = C.gravel },
+		Folded = { fg = C.grey_chateau, bg = C.bright_grey },
+		FoldColumn = { fg = C.shuttle_grey, bg = C.mine_shaft },
+		SignColumn = { fg = C.boulder },
+		LineNr = { fg = C.zambezi },
+		CursorLineNr = { fg = C.silver_rust },
+		MatchParen = { fg = C.wewak, bold = true },
+		ModeMsg = { fg = C.highland },
+		NonText = { fg = C.scorpion },
+		Pmenu = { fg = C.total_white, bg = C.background },
+		PmenuSel = { fg = C.total_black, bg = C.ship_cove, bold = true },
+		Question = { fg = C.mantis },
+		QuickFixLine = { bg = C.bright_grey },
+		Search = { fg = C.wewak, bg = C.cocoa_brown },
+		SpecialKey = { fg = C.tundora, bg = C.grey_one },
+		SpellBad = { bg = C.old_brick },
+		SpellCap = { bg = C.dark_blue },
+		SpellLocal = { bg = C.casal },
+		SpellRare = { bg = C.ripe_plum },
+		StatusLine = { fg = C.total_white, bg = C.grey_one },
+		StatusLineNC = { fg = C.silver, bg = C.grey_one },
+		TabLine = { fg = C.cadet_blue, bg = C.total_black },
+		TabLineFill = { fg = C.regent_grey },
+		TabLineSel = { fg = C.mantis, bg = C.total_black },
+		Title = { fg = C.mantis },
+		Visual = { bg = C.tundora },
+		WinSeparator = { fg = C.cadet_blue },
+	}
+end
+
+return M
