@@ -4,9 +4,9 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    NeoTreeDirectoryName = { fg = c.brandy },
+    NeoTreeDirectoryName = { fg = c.morning_glory },
     NeoTreeDirectoryIcon = { fg = c.morning_glory },
-    NeoTreeRootName = { fg = c.brandy, bold = true },
+    NeoTreeRootName = { fg = c.goldenrod, bold = true },
     NeoTreeFileName = { fg = c.foreground },
     NeoTreeFileIcon = { fg = c.morning_glory },
     NeoTreeFileNameOpened = { fg = c.perano },

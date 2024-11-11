@@ -5,12 +5,13 @@ local M = {}
 function M.get(c, opts)
   return {
     -- Syntax
+    ["@variable"] = { fg = c.alto },
     Comment = { fg = c.grey },
     Constant = { fg = c.raw_sienna },
     String = { fg = c.green_smoke },
     Identifier = { fg = c.foreground },
     Function = { fg = c.goldenrod },
-    Statement = { fg = c.perano },
+    Statement = { fg = c.biloba_flower },
     Operator = { fg = c.morning_glory },
     PreProc = { fg = c.ship_cove },
     Include = { fg = c.ship_cove, italic = true },
@@ -24,6 +25,7 @@ function M.get(c, opts)
     Italic = { italic = true },
     Error = { bg = c.old_brick },
     Todo = { fg = c.silver },
+
     -- TreeSitter
     TSVariable = { fg = c.foreground },
     TSFunction = { fg = c.goldenrod },
@@ -38,6 +40,7 @@ function M.get(c, opts)
     TSUnderline = { underline = true },
     TSStrike = { strikethrough = true },
     TSURI = { fg = c.morning_glory },
+
     -- LSP
     LspDiagnosticsDefaultError = { fg = c.old_brick },
     LspDiagnosticsDefaultWarning = { fg = c.koromiko },
@@ -46,6 +49,25 @@ function M.get(c, opts)
     LspReferenceText = { bg = c.grey_one },
     LspReferenceRead = { bg = c.grey_one },
     LspReferenceWrite = { bg = c.grey_one },
+
+    -- HTML
+    htmlTag = { fg = c.grey_chateau },
+    htmlEndTag = { fg = c.grey_chateau },
+    htmlTagName = { fg = c.morning_glory },
+    htmlArg = { fg = c.wewak },
+    htmlTitle = { fg = c.foreground },
+    htmlSpecialTagName = { fg = c.brandy },
+    htmlLink = { fg = c.perano, underline = true },
+    htmlSpecialChar = { fg = c.goldenrod },
+
+    -- JSON
+    ["@tag"] = { fg = c.hoki },
+    ["@tag.attribute"] = { fg = c.biloba_flower, italic = true },
+    ["@tag.delimiter"] = { fg = c.grey_chateua },
+    ["@tag.builtin.tsx"] = { fg = c.morning_glory },
+    ["@tag.tsx"] = { fg = c.morning_glory },
+    ["@tag.jsx"] = { fg = c.morning_glory },
+    ["@property.json"] = { fg = c.morning_glory },
   }
 end
 
