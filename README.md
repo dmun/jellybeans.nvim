@@ -55,5 +55,6 @@ require('lualine').setup {
 
 ## Acknowledgements
 
-- [tokyonight.nvim](https://gitub.com/folke/tokyonight.nvim)
-- [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim)
+- [tokyonight.nvim](https://gitub.com/folke/tokyonight.nvim) by [Folke](https://githubcom/folke)
+- [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
+- [jbeans](https://github.com/scajanus/jbeans) by [scajanus](https://github.com/scajanus)
