@@ -8,7 +8,7 @@ function M.get(c, opts)
     DashboardCenter = { fg = c.morning_glory },
     DashboardFooter = { fg = c.grey },
     DashboardKey = { fg = c.goldenrod },
-    DashboardDesc = { fg = c.koromiko },
+    DashboardDesc = { fg = c.biloba_flower },
     DashboardIcon = { fg = c.goldenrod },
     DashboardProjectTitle = { fg = c.perano, bold = true },
     DashboardProjectTitleIcon = { fg = c.morning_glory },
