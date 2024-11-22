@@ -50,6 +50,36 @@ function M.blend_fg(hex, amount, fg)
 end
 M.lighten = M.blend_fg
 
+M.cache = {}
+
+function M.cache.file(key)
+  return vim.fn.stdpath("cache") .. "/jellybeans-" .. key .. ".json"
+end
+
+---@param key string
+function M.cache.read(key)
+  ---@type boolean, jellybeans.Cache
+  local ok, ret = pcall(function()
+    return vim.json.decode(M.read(M.cache.file(key)), { luanil = {
+      object = true,
+      array = true,
+    } })
+  end)
+  return ok and ret or nil
+end
+
+---@param key string
+---@param data jellybeans.Cache
+function M.cache.write(key, data)
+  pcall(M.write, M.cache.file(key), vim.json.encode(data))
+end
+
+function M.cache.clear()
+  for _, style in ipairs({ "storm", "day", "night", "moon" }) do
+    uv.fs_unlink(M.cache.file(style))
+  end
+end
+
 ---@param groups jellybeans.Highlights
 ---@return table<string, vim.api.keyset.highlight>
 function M.resolve(groups)

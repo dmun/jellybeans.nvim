@@ -7,8 +7,8 @@ local M = {
 }
 
 function M.reset()
-  require("tokyonight.util").cache.clear()
-  local colors = require("tokyonight.colors").setup()
+  require("jellybeans.util").cache.clear()
+  local colors = require("jellybeans.palettes").get_palette(nil)
   M.globals.colors = colors
   M.globals.c = colors
 end
@@ -50,6 +50,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   callback = reload,
 })
 return {
+  {
+    -- follows the system theme
+    "f-person/auto-dark-mode.nvim",
+    enabled = false,
+  },
   {
     "echasnovski/mini.hipatterns",
     opts = function(_, opts)

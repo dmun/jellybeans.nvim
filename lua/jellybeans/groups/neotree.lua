@@ -19,7 +19,7 @@ function M.get(c, opts)
     NeoTreeGitUnstaged = { fg = c.koromiko },
     NeoTreeGitUntracked = { fg = c.raw_sienna },
     NeoTreeGitStaged = { fg = c.tea_green },
-    NeoTreeFloatBorder = { bg = c.total_black, fg = c.grey_one },
+    NeoTreeFloatBorder = { bg = c.background, fg = c.background },
     NeoTreeFloatTitle = { bg = c.total_black, fg = c.foreground },
   }
 end
