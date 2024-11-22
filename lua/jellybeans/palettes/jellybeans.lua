@@ -1,5 +1,5 @@
 ---@class Palette
-return {
+palette = {
   foreground = "#e8e8d3",
   background = "#151515",
   grey = "#888888",
@@ -49,3 +49,11 @@ return {
   dell = "#437019",
   calypso = "#2B5B77",
 }
+
+palette.git = {
+  add = { fg = palette.tea_green, bg = palette.dell },
+  palettehange = { fg = palette.alto, bg = palette.calypso },
+  delete = { fg = palette.alto, bg = palette.old_brick },
+}
+
+return palette

@@ -12,9 +12,9 @@ function M.get(c, opts)
     CursorColumn = { bg = c.grey_one },
     CursorLine = { bg = c.grey_one },
     Directory = { fg = c.brandy },
-    DiffAdd = { fg = c.tea_green, bg = c.dell },
-    DiffChange = { bg = c.calypso },
-    DiffDelete = { fg = c.temptress, bg = c.purple },
+    DiffAdd = c.git.add,
+    DiffChange = c.git.change,
+    DiffDelete = c.git.delete,
     DiffText = { fg = c.morning_glory, bg = c.total_black },
     ErrorMsg = { bg = c.old_brick },
     VertSplit = { fg = c.gravel },
@@ -44,6 +44,9 @@ function M.get(c, opts)
     Title = { fg = c.mantis },
     Visual = { bg = c.tundora },
     WinSeparator = { fg = c.cadet_blue },
+    GitSignsAddVirtLnInLine = c.git.add,
+    GitSignsChangeVirtLnInLine = c.git.change,
+    GitSignsDeleteVirtLnInLine = c.git.delete,
   }
 end
 
