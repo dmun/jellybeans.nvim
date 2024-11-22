@@ -9,6 +9,7 @@ function M.get(c, opts)
     ["@boolean"] = "Boolean",
     ["@character"] = "Character",
     ["@character.printf"] = "SpecialChar",
+    ["@character.rust"] = "String",
     ["@character.special"] = "SpecialChar",
     ["@comment"] = "Comment",
     ["@constant"] = "Constant",
@@ -67,8 +68,7 @@ function M.get(c, opts)
     ["@number"] = "Number",
     ["@number.float"] = "Float",
     ["@operator"] = "Operator",
-    ["@property"] = { fg = c.cadet_blue, italic = true },
-    -- ["@property.go"] = { fg = c.perano },
+    ["@property"] = "Property",
     ["@punctuation.bracket"] = { fg = c.morning_glory }, -- For brackets and parens.
     ["@punctuation.delimiter"] = { fg = c.morning_glory }, -- For delimiters ie: `.`
     ["@punctuation.special"] = { fg = c.morning_glory }, -- For special symbols (e.g. `{}` in string interpolation)
@@ -94,6 +94,8 @@ function M.get(c, opts)
       -- style = opts.styles.variables
     }, -- Any variable name that does not have another highlight.
     ["@variable.member"] = { fg = c.alto }, -- For fields.
+    ["@property.go"] = { fg = c.perano, italic = true }, -- For fields.
+    ["@variable.member.go"] = { fg = c.perano }, -- For fields.
     ["@variable.parameter"] = { fg = c.silver_rust, italic = true }, -- For parameters of a function.
     ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.old_brick, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
