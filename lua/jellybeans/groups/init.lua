@@ -48,8 +48,8 @@ function M.setup(colors, opts)
   local groups = {
     editor = true,
     syntax = true,
-    -- semantic_tokens = true,
-    -- treesitter = true,
+    semantic_tokens = true,
+    treesitter = true,
   }
   if opts.plugins.all then
     for _, group in pairs(M.plugins) do
@@ -64,13 +64,13 @@ function M.setup(colors, opts)
     end
 
     -- special case for mini.nvim
-    -- if plugins["mini.nvim"] then
-    --   for _, group in pairs(M.plugins) do
-    --     if group:find("^mini_") then
-    --       groups[group] = true
-    --     end
-    --   end
-    -- end
+    if plugins["mini.nvim"] then
+      for _, group in pairs(M.plugins) do
+        if group:find("^mini_") then
+          groups[group] = true
+        end
+      end
+    end
   end
 
   -- manually enable/disable plugins

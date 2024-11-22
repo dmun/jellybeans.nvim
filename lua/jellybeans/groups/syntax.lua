@@ -5,9 +5,9 @@ local M = {}
 function M.get(c, opts)
   return {
     -- Syntax
-    ["@variable"] = { fg = c.alto },
     Comment = { fg = c.grey },
     Constant = { fg = c.raw_sienna },
+    Exception = { fg = c.wewak },
     String = { fg = c.green_smoke },
     Identifier = { fg = c.foreground },
     Function = { fg = c.goldenrod },
@@ -18,28 +18,14 @@ function M.get(c, opts)
     Define = { fg = c.ship_cove },
     Type = { fg = c.koromiko, italic = true },
     Structure = { fg = c.morning_glory },
-    Special = { fg = c.highland },
+    Special = { fg = c.biloba_flower },
     Delimiter = { fg = c.hoki },
     Underlined = { underline = true },
     Bold = { bold = true },
     Italic = { italic = true },
     Error = { bg = c.old_brick },
     Todo = { fg = c.silver },
-
-    -- TreeSitter
-    TSVariable = { fg = c.foreground },
-    TSFunction = { fg = c.goldenrod },
-    TSKeyword = { fg = c.perano },
-    TSString = { fg = c.green_smoke },
-    TSType = { fg = c.koromiko, italic = true },
-    TSComment = { fg = c.grey },
-    TSVariableBuiltin = { fg = c.biloba_flower },
-    TSNamespace = { fg = c.wewak },
-    TSTagDelimiter = { fg = c.bayoux_blue },
-    TSEmphasis = { italic = true },
-    TSUnderline = { underline = true },
-    TSStrike = { strikethrough = true },
-    TSURI = { fg = c.morning_glory },
+    Variable = { fg = c.alto },
 
     -- LSP
     LspDiagnosticsDefaultError = { fg = c.old_brick },
@@ -59,29 +45,6 @@ function M.get(c, opts)
     htmlSpecialTagName = { fg = c.brandy },
     htmlLink = { fg = c.perano, underline = true },
     htmlSpecialChar = { fg = c.goldenrod },
-
-    -- JSON
-    ["@property.json"] = { fg = c.morning_glory },
-
-    -- JSX/TSX
-    ["@tag"] = { fg = c.hoki },
-    ["@tag.attribute"] = { fg = c.biloba_flower, italic = true },
-    ["@tag.delimiter"] = { fg = c.grey_chateua },
-    ["@tag.builtin.tsx"] = { fg = c.morning_glory },
-    ["@tag.tsx"] = { fg = c.morning_glory },
-    ["@tag.jsx"] = { fg = c.morning_glory },
-
-    -- Python
-    ["@lsp.type.parameter.python"] = { italic = true },
-    ["@variable.builtin.python"] = { fg = c.grey_chateau, italic = true },
-    ["@variable.member.python"] = { fg = c.ship_cove, italic = true },
-
-    ["@keyword.operator.python"] = { fg = c.morning_glory },
-
-    -- Terraform
-    ["@lsp.type.enumMember.terraform"] = { fg = c.perano },
-    ["@lsp.mod.defaultLibrary.terraform"] = { fg = c.biloba_flower },
-    ["@lsp.type.property.terraform"] = { italic = true },
   }
 end
 
