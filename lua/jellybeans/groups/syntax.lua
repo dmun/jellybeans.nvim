@@ -61,13 +61,27 @@ function M.get(c, opts)
     htmlSpecialChar = { fg = c.goldenrod },
 
     -- JSON
+    ["@property.json"] = { fg = c.morning_glory },
+
+    -- JSX/TSX
     ["@tag"] = { fg = c.hoki },
     ["@tag.attribute"] = { fg = c.biloba_flower, italic = true },
     ["@tag.delimiter"] = { fg = c.grey_chateua },
     ["@tag.builtin.tsx"] = { fg = c.morning_glory },
     ["@tag.tsx"] = { fg = c.morning_glory },
     ["@tag.jsx"] = { fg = c.morning_glory },
-    ["@property.json"] = { fg = c.morning_glory },
+
+    -- Python
+    ["@lsp.type.parameter.python"] = { italic = true },
+    ["@variable.builtin.python"] = { fg = c.grey_chateau, italic = true },
+    ["@variable.member.python"] = { fg = c.ship_cove, italic = true },
+
+    ["@keyword.operator.python"] = { fg = c.morning_glory },
+
+    -- Terraform
+    ["@lsp.type.enumMember.terraform"] = { fg = c.perano },
+    ["@lsp.mod.defaultLibrary.terraform"] = { fg = c.biloba_flower },
+    ["@lsp.type.property.terraform"] = { italic = true },
   }
 end
 
