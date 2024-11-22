@@ -27,11 +27,6 @@ function M.get(c, opts)
     Type = { fg = c.koromiko, italic = true },
     Underlined = { underline = true },
     Variable = { fg = c.alto },
-    git = {
-      add = { fg = c.tea_green },
-      change = { fg = c.calypso },
-      delete = { fg = c.old_brick },
-    },
 
     -- LSP
     LspDiagnosticsDefaultError = { fg = c.old_brick },
