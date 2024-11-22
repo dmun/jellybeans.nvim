@@ -75,8 +75,11 @@ function M.get(c, opts)
     ["@lsp.type.parameter.python"] = { italic = true },
     ["@variable.builtin.python"] = { fg = c.grey_chateau, italic = true },
     ["@variable.member.python"] = { fg = c.ship_cove, italic = true },
-
     ["@keyword.operator.python"] = { fg = c.morning_glory },
+
+    -- Lua
+    ["@lsp.type.property.lua"] = { fg = c.morning_glory },
+    ["@lsp.mod.global.lua"] = { fg = c.raw_sienna },
 
     -- Terraform
     ["@lsp.type.enumMember.terraform"] = { fg = c.perano },
