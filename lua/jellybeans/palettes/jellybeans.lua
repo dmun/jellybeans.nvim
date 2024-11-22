@@ -38,7 +38,6 @@ palette = {
   costa_del_sol = "#556633",
   biloba_flower = "#c6b6ee",
   morning_glory = "#8fbfdc",
-  -- goldenrod = Util.lighten("#fad07a", 0.9),
   goldenrod = "#fad07a",
   ship_cove = "#8197bf",
   koromiko = Util.darken("#ffb964", 0.9),
