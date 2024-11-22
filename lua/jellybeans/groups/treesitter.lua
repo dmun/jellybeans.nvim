@@ -66,8 +66,9 @@ function M.get(c, opts)
     ["@none"] = {},
     ["@number"] = "Number",
     ["@number.float"] = "Float",
-    ["@operator"] = { fg = c.morning_glory }, -- For any operator: `+`, but also `->` and `*` in C.
-    ["@property"] = { fg = c.biloba_flower },
+    ["@operator"] = "Operator",
+    ["@property"] = { fg = c.cadet_blue, italic = true },
+    -- ["@property.go"] = { fg = c.perano },
     ["@punctuation.bracket"] = { fg = c.morning_glory }, -- For brackets and parens.
     ["@punctuation.delimiter"] = { fg = c.morning_glory }, -- For delimiters ie: `.`
     ["@punctuation.special"] = { fg = c.morning_glory }, -- For special symbols (e.g. `{}` in string interpolation)
@@ -85,16 +86,16 @@ function M.get(c, opts)
     ["@tag.javascript"] = { fg = c.morning_glory },
     ["@type"] = "Type",
     ["@type.builtin"] = { fg = Util.blend_bg(c.morning_glory, 0.8) },
+    ["@type.builtin.python"] = { fg = Util.blend_bg(c.morning_glory, 0.8) },
     ["@type.definition"] = "Typedef",
     ["@type.qualifier"] = "@keyword",
     ["@variable"] = {
       fg = c.foreground,
       -- style = opts.styles.variables
     }, -- Any variable name that does not have another highlight.
-    -- ["@variable.builtin"] = { fg = c.old_brick }, -- Variable names that are defined by the languages, like `this` or `self`.
-    -- ["@variable.member"] = { fg = c.green1 }, -- For fields.
-    -- ["@variable.parameter"] = { fg = c.yellow }, -- For parameters of a function.
-    -- ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.yellow, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+    ["@variable.member"] = { fg = c.alto }, -- For fields.
+    ["@variable.parameter"] = { fg = c.silver_rust, italic = true }, -- For parameters of a function.
+    ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.old_brick, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     -- JSON
     ["@property.json"] = { fg = c.morning_glory },
@@ -103,10 +104,10 @@ function M.get(c, opts)
     ["@tag.builtin.tsx"] = { fg = c.morning_glory },
 
     -- Python
-    ["@variable.builtin.python"] = { fg = c.grey_chateau, italic = true },
+    -- ["@variable.builtin.python"] = { fg = c.grey_chateau, italic = true },
     -- ["@constant.builtin.python"] = "@keyword",
     -- ["@type.builtin.python"] = "@keyword",
-    ["@keyword.operator.python"] = { fg = c.morning_glory },
+    -- ["@keyword.operator.python"] = { fg = c.morning_glory },
   }
 end
 
