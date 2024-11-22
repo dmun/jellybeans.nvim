@@ -1,3 +1,5 @@
+local Util = require("jellybeans.util")
+
 ---@class Palette
 palette = {
   foreground = "#e8e8d3",
@@ -27,18 +29,19 @@ palette = {
   total_black = "#000000",
   cadet_blue = "#b0b8c0",
   perano = "#b0d0f0",
-  wewak = "#f0a0c0",
+  wewak = Util.darken("#f0a0c0", 0.85),
   mantis = "#70b950",
-  raw_sienna = "#cf6a4c",
+  raw_sienna = Util.lighten("#cf6a4c", 0.8),
   highland = "#799d6a",
   hoki = "#668799",
   green_smoke = "#99ad6a",
   costa_del_sol = "#556633",
   biloba_flower = "#c6b6ee",
   morning_glory = "#8fbfdc",
+  -- goldenrod = Util.lighten("#fad07a", 0.9),
   goldenrod = "#fad07a",
   ship_cove = "#8197bf",
-  koromiko = "#ffb964",
+  koromiko = Util.darken("#ffb964", 0.9),
   brandy = "#dad085",
   old_brick = "#902020",
   dark_blue = "#0000df",

@@ -39,6 +39,7 @@ function M.get(c, opts)
     ["@keyword.operator"] = "@operator",
     ["@keyword.repeat"] = "Repeat",
     ["@keyword.return"] = { fg = c.wewak },
+    ["@keyword.return.go"] = { fg = c.wewak },
     ["@keyword.storage"] = "StorageClass",
     ["@label"] = { fg = c.morning_glory }, -- For labels: `label:` in C and `:label:` in Lua.
     ["@markup"] = "@none",
@@ -62,6 +63,7 @@ function M.get(c, opts)
     ["@markup.strong"] = { bold = true },
     ["@markup.underline"] = { underline = true },
     ["@module"] = "Include",
+    ["@module.go"] = "Indentifier",
     ["@module.builtin"] = { fg = c.wewak }, -- Variable names that are defined by the languages, like `this` or `self`.
     ["@namespace.builtin"] = "@variable.builtin",
     ["@none"] = {},
@@ -69,6 +71,7 @@ function M.get(c, opts)
     ["@number.float"] = "Float",
     ["@operator"] = "Operator",
     ["@property"] = "Property",
+    ["@property.toml"] = "Operator",
     ["@punctuation.bracket"] = { fg = c.morning_glory }, -- For brackets and parens.
     ["@punctuation.delimiter"] = { fg = c.morning_glory }, -- For delimiters ie: `.`
     ["@punctuation.special"] = { fg = c.morning_glory }, -- For special symbols (e.g. `{}` in string interpolation)
@@ -94,22 +97,16 @@ function M.get(c, opts)
       -- style = opts.styles.variables
     }, -- Any variable name that does not have another highlight.
     ["@variable.member"] = { fg = c.alto }, -- For fields.
-    ["@property.go"] = { fg = c.perano, italic = true }, -- For fields.
-    ["@variable.member.go"] = { fg = c.perano }, -- For fields.
     ["@variable.parameter"] = { fg = c.silver_rust, italic = true }, -- For parameters of a function.
     ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.old_brick, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     -- JSON
     ["@property.json"] = { fg = c.morning_glory },
-
     -- JSX/TSX
     ["@tag.builtin.tsx"] = { fg = c.morning_glory },
 
-    -- Python
-    -- ["@variable.builtin.python"] = { fg = c.grey_chateau, italic = true },
-    -- ["@constant.builtin.python"] = "@keyword",
-    -- ["@type.builtin.python"] = "@keyword",
-    -- ["@keyword.operator.python"] = { fg = c.morning_glory },
+    ["@keyword.function.go"] = "Function",
+    ["@keyword.coroutine.go"] = "Exception",
   }
 end
 

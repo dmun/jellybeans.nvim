@@ -74,11 +74,7 @@ function M.cache.write(key, data)
   pcall(M.write, M.cache.file(key), vim.json.encode(data))
 end
 
-function M.cache.clear()
-  for _, style in ipairs({ "storm", "day", "night", "moon" }) do
-    uv.fs_unlink(M.cache.file(style))
-  end
-end
+function M.cache.clear() end
 
 ---@param groups jellybeans.Highlights
 ---@return table<string, vim.api.keyset.highlight>

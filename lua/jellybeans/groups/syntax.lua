@@ -4,7 +4,6 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    -- Syntax
     Bold = { bold = true },
     Comment = { fg = c.grey },
     Constant = { fg = c.raw_sienna },
