@@ -8,7 +8,7 @@ function M.get(c, opts)
     NormalFloat = { fg = c.foreground, bg = c.cod_grey },
     ColorColumn = { bg = c.total_black },
     Conceal = { fg = c.morning_glory },
-    Cursor = { fg = c.background, bg = c.brandy },
+    Cursor = { bg = c.alto, fg = c.background },
     CursorColumn = { bg = c.grey_one },
     CursorLine = { bg = c.grey_one },
     Directory = { fg = c.brandy },
