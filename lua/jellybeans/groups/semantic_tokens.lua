@@ -4,8 +4,6 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    -- ["@lsp.mod.defaultLibrary"] = "@keyword",
-    -- ["@lsp.mod.defaultLibrary.python"] = "Define",
     ["@lsp.type.boolean"] = "@boolean",
     ["@lsp.type.builtinType"] = "@type.builtin",
     ["@lsp.type.comment"] = "@comment",
