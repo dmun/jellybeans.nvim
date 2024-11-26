@@ -50,12 +50,26 @@ palette = {
   tea_green = "#d2ebbe",
   dell = "#437019",
   calypso = "#2B5B77",
+  error = "#ff0000",
+  warning = "#ffaf00",
+  info = "#87d7ff",
+  hint = "#d7af87",
+  ok = "#afd787",
 }
 
 palette.git = {
-  add = { fg = palette.tea_green, bg = palette.dell },
-  palettehange = { fg = palette.alto, bg = palette.calypso },
-  delete = { fg = palette.alto, bg = palette.old_brick },
+  add = { bg = Util.darken(palette.costa_del_sol, 0.6) },
+  delete = { bg = Util.darken(palette.old_brick, 0.6) },
+  change = { bg = palette.grey_one },
+  text = { bg = palette.grey_three },
+}
+
+palette.diag = {
+  error = palette.error,
+  warning = palette.warning,
+  info = palette.info,
+  hint = palette.hint,
+  ok = palette.ok,
 }
 
 return palette

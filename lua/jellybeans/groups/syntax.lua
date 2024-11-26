@@ -9,7 +9,7 @@ function M.get(c, opts)
     Constant = { fg = c.raw_sienna },
     Define = { fg = c.ship_cove },
     Delimiter = { fg = c.hoki },
-    Error = { bg = c.old_brick },
+    Error = { bg = c.error },
     Exception = { fg = c.wewak },
     Function = { fg = Util.lighten(c.goldenrod, 0.9) },
     Identifier = { fg = c.foreground },
@@ -28,7 +28,7 @@ function M.get(c, opts)
     Variable = { fg = c.alto },
 
     -- LSP
-    LspDiagnosticsDefaultError = { fg = c.old_brick },
+    LspDiagnosticsDefaultError = { fg = c.error },
     LspDiagnosticsDefaultWarning = { fg = c.koromiko },
     LspDiagnosticsDefaultInformation = { fg = c.perano },
     LspDiagnosticsDefaultHint = { fg = c.tea_green },

@@ -5,7 +5,7 @@ local M = {}
 function M.get(c, opts)
   return {
     Normal = { fg = c.foreground, bg = c.background },
-    NormalFloat = { fg = c.foreground, bg = c.cod_grey },
+    NormalFloat = { bg = c.grey_three },
     ColorColumn = { bg = c.total_black },
     Conceal = { fg = c.morning_glory },
     Cursor = { bg = c.alto, fg = c.background },
@@ -15,8 +15,8 @@ function M.get(c, opts)
     DiffAdd = c.git.add,
     DiffChange = c.git.change,
     DiffDelete = c.git.delete,
-    DiffText = { fg = c.morning_glory, bg = c.total_black },
-    ErrorMsg = { bg = c.old_brick },
+    DiffText = c.git.text,
+    ErrorMsg = { bg = c.error },
     VertSplit = { fg = c.gravel },
     Folded = { fg = c.grey_chateau, bg = c.bright_grey },
     FoldColumn = { fg = c.shuttle_grey, bg = c.mine_shaft },
@@ -26,13 +26,13 @@ function M.get(c, opts)
     MatchParen = { fg = c.wewak, bold = true },
     ModeMsg = { fg = c.highland },
     NonText = { fg = c.scorpion },
-    Pmenu = { fg = c.total_white, bg = c.background },
-    PmenuSel = { fg = c.total_black, bg = c.ship_cove, bold = true },
+    Pmenu = { bg = c.grey_three },
+    PmenuSel = { bg = c.calypso, bold = true },
     Question = { fg = c.mantis },
     QuickFixLine = { bg = c.bright_grey },
     Search = { fg = c.wewak, bg = c.cocoa_brown },
     SpecialKey = { fg = c.tundora, bg = c.grey_one },
-    SpellBad = { sp = c.old_brick, undercurl = true },
+    SpellBad = { sp = c.error, undercurl = true },
     SpellCap = { sp = c.old_brick, undercurl = true },
     SpellLocal = { sp = c.hoki, undercurl = true },
     SpellRare = { sp = c.hoki, undercurl = true },
@@ -47,6 +47,12 @@ function M.get(c, opts)
     GitSignsAddVirtLnInLine = c.git.add,
     GitSignsChangeVirtLnInLine = c.git.change,
     GitSignsDeleteVirtLnInLine = c.git.delete,
+
+    DiagnosticError = { fg = c.diag.error },
+    DiagnosticWarn = { fg = c.diag.warning },
+    DiagnosticInfo = { fg = c.diag.info },
+    DiagnosticHint = { fg = c.diag.hint },
+    DiagnosticOk = { fg = c.diag.ok },
   }
 end
 
