@@ -9,6 +9,8 @@ function M.get(c, opts)
     ColorColumn = { bg = c.total_black },
     Conceal = { fg = c.morning_glory },
     Cursor = { bg = c.alto, fg = c.background },
+    CurSearch = { bg = c.koromiko, fg = c.mine_shaft },
+    IncSearch = { bg = c.koromiko, fg = c.mine_shaft },
     CursorColumn = { bg = c.grey_one },
     CursorLine = { bg = c.grey_one },
     Directory = { fg = c.brandy },
