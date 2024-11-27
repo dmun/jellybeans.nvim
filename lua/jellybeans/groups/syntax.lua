@@ -45,6 +45,15 @@ function M.get(c, opts)
     htmlSpecialTagName = { fg = c.brandy },
     htmlLink = { fg = c.perano, underline = true },
     htmlSpecialChar = { fg = c.goldenrod },
+
+    -- Markdown
+    RenderMarkdownCodeInline = { bg = c.background, fg = c.koromiko },
+    RenderMarkdownH1Bg = { fg = c.mine_shaft, bg = c.calypso },
+    RenderMarkdownH2Bg = { fg = c.mine_shaft, bg = c.purple },
+    RenderMarkdownH3Bg = { fg = c.mine_shaft, bg = c.dell },
+    RenderMarkdownH4Bg = { fg = c.mine_shaft, bg = c.raw_sienna },
+    RenderMarkdownH5Bg = { fg = c.mine_shaft, bg = c.wewak },
+    RenderMarkdownH6Bg = { fg = c.mine_shaft, bg = c.perano },
   }
 end
 

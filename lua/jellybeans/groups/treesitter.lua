@@ -9,7 +9,6 @@ function M.get(c, opts)
     ["@boolean"] = "Boolean",
     ["@character"] = "Character",
     ["@character.printf"] = "SpecialChar",
-    ["@character.rust"] = "String",
     ["@character.special"] = "SpecialChar",
     ["@comment"] = "Comment",
     ["@constant"] = "Constant",
@@ -47,6 +46,13 @@ function M.get(c, opts)
     ["@markup.environment"] = "Macro",
     ["@markup.environment.name"] = "Type",
     ["@markup.heading"] = "Title",
+    ["@markup.raw.markdown_inline"] = "Type",
+    ["@markup.heading.1.markdown"] = "RenderMarkdwonH1Bg",
+    ["@markup.heading.2.markdown"] = "RenderMarkdwonH2Bg",
+    ["@markup.heading.3.markdown"] = "RenderMarkdwonH3Bg",
+    ["@markup.heading.4.markdown"] = "RenderMarkdwonH4Bg",
+    ["@markup.heading.5.markdown"] = "RenderMarkdwonH5Bg",
+    ["@markup.heading.6.markdown"] = "RenderMarkdwonH6Bg",
     ["@markup.italic"] = { italic = true },
     ["@markup.link"] = { fg = c.tea_green },
     ["@markup.link.label"] = "SpecialChar",
@@ -102,11 +108,17 @@ function M.get(c, opts)
 
     -- JSON
     ["@property.json"] = { fg = c.morning_glory },
+
     -- JSX/TSX
     ["@tag.builtin.tsx"] = { fg = c.morning_glory },
 
+    -- GO
     ["@keyword.function.go"] = "Function",
     ["@keyword.coroutine.go"] = "Exception",
+
+    -- Rust
+    ["@keyword.import.rust"] = { fg = c.biloba_flower },
+    ["@character.rust"] = "String",
   }
 end
 

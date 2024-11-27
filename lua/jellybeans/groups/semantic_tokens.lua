@@ -8,6 +8,7 @@ function M.get(c, opts)
     ["@lsp.type.builtinType"] = "@type.builtin",
     ["@lsp.type.comment"] = "@comment",
     ["@lsp.type.decorator"] = "@attribute",
+    ["@lsp.type.decorator.rust"] = "@keyword.function",
     ["@lsp.type.deriveHelper"] = "@attribute",
     ["@lsp.type.enum"] = "@type",
     ["@lsp.type.enumMember"] = "@constant",
