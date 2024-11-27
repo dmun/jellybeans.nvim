@@ -46,7 +46,7 @@ function M.get(c, opts)
     ["@markup.environment"] = "Macro",
     ["@markup.environment.name"] = "Type",
     ["@markup.heading"] = "Title",
-    ["@markup.raw.markdown_inline"] = "Type",
+    ["@markup.raw.markdown_inline"] = { fg = c.koromiko },
     ["@markup.heading.1.markdown"] = "RenderMarkdwonH1Bg",
     ["@markup.heading.2.markdown"] = "RenderMarkdwonH2Bg",
     ["@markup.heading.3.markdown"] = "RenderMarkdwonH3Bg",
@@ -64,7 +64,6 @@ function M.get(c, opts)
     ["@markup.list.unchecked"] = { fg = c.ship_cove }, -- For brackets and parens.
     ["@markup.math"] = "Special",
     ["@markup.raw"] = "String",
-    ["@markup.raw.markdown_inline"] = { bg = c.mine_shaft, fg = c.morning_glory },
     ["@markup.strikethrough"] = { strikethrough = true },
     ["@markup.strong"] = { bold = true },
     ["@markup.underline"] = { underline = true },
