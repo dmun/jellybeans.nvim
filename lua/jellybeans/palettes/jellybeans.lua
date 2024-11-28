@@ -1,5 +1,3 @@
-local Util = require("jellybeans.util")
-
 ---@class Palette
 palette = {
   foreground = "#e8e8d3",
@@ -29,9 +27,9 @@ palette = {
   total_black = "#000000",
   cadet_blue = "#b0b8c0",
   perano = "#b0d0f0",
-  wewak = Util.darken("#f0a0c0", 0.85),
+  wewak = "#cc88a3",
   mantis = "#70b950",
-  raw_sienna = Util.lighten("#cf6a4c", 0.8),
+  raw_sienna = "#d98870",
   highland = "#799d6a",
   hoki = "#668799",
   green_smoke = "#99ad6a",
@@ -40,7 +38,7 @@ palette = {
   morning_glory = "#8fbfdc",
   goldenrod = "#fad07a",
   ship_cove = "#8197bf",
-  koromiko = Util.darken("#ffb964", 0.9),
+  koromiko = "#e6a75a",
   brandy = "#dad085",
   old_brick = "#902020",
   dark_blue = "#0000df",
@@ -58,8 +56,8 @@ palette = {
 }
 
 palette.git = {
-  add = { bg = Util.darken(palette.costa_del_sol, 0.6) },
-  delete = { bg = Util.darken(palette.old_brick, 0.6) },
+  add = { bg = "#333d1f" },
+  delete = { bg = "#561313" },
   change = { bg = palette.grey_one },
   text = { bg = palette.grey_three },
 }
