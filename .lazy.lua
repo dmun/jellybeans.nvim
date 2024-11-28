@@ -51,11 +51,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 })
 return {
   {
-    -- follows the system theme
-    "f-person/auto-dark-mode.nvim",
-    enabled = false,
-  },
-  {
     "echasnovski/mini.hipatterns",
     opts = function(_, opts)
       local hi = require("mini.hipatterns")
