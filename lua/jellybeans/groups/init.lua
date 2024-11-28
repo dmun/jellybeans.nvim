@@ -6,10 +6,11 @@ M.plugins = {
   ["dashboard-nvim"] = "dashboard",
   ["gitsigns.nvim"] = "gitsigns",
   ["telescope.nvim"] = "telescope",
+  ["snacks.nvim"] = "snacks",
   ["which-key.nvim"] = "which_key",
   ["neo-tree.nvim"] = "neotree",
   ["nvim-treesitter-context"] = "treesitter_context",
-  --
+
   -- ["alpha-nvim"] = "alpha",
   -- ["blink.cmp"] = "blink_cmp",
   -- ["flash.nvim"] = "flash",

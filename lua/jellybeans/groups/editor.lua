@@ -5,7 +5,7 @@ local M = {}
 function M.get(c, opts)
   return {
     Normal = { fg = c.foreground, bg = c.background },
-    NormalFloat = { bg = c.grey_three },
+    NormalFloat = { bg = c.mine_shaft },
     ColorColumn = { bg = c.total_black },
     Conceal = { fg = c.morning_glory },
     Cursor = { bg = c.alto, fg = c.background },
