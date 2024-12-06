@@ -32,9 +32,9 @@ function M.get(c, opts)
     LspDiagnosticsDefaultWarning = { fg = c.koromiko },
     LspDiagnosticsDefaultInformation = { fg = c.perano },
     LspDiagnosticsDefaultHint = { fg = c.tea_green },
-    LspReferenceText = { bg = c.grey_one },
-    LspReferenceRead = { bg = c.grey_one },
-    LspReferenceWrite = { bg = c.grey_one },
+    LspReferenceRead = { bg = c.cocoa_brown },
+    LspReferenceWrite = { bg = c.cocoa_brown },
+    LspReferenceText = { bg = c.cocoa_brown },
 
     -- HTML
     htmlTag = { fg = c.grey_chateau },
