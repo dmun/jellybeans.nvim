@@ -35,6 +35,7 @@ function M.get(c, opts)
       -- style = opts.styles.functions
     }, -- For keywords used to define a function.
     ["@keyword.import"] = "Include",
+    ["@keyword.import.python"] = { fg = c.biloba_flower },
     ["@keyword.operator"] = "@operator",
     ["@keyword.repeat"] = "Repeat",
     ["@keyword.return"] = { fg = c.wewak },

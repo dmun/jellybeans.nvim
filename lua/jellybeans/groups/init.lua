@@ -3,34 +3,14 @@ local Util = require("jellybeans.util")
 local M = {}
 
 M.plugins = {
+  ["CopilotChat.nvim"] = "copilotchat",
   ["dashboard-nvim"] = "dashboard",
   ["gitsigns.nvim"] = "gitsigns",
-  ["telescope.nvim"] = "telescope",
-  ["snacks.nvim"] = "snacks",
-  ["which-key.nvim"] = "which_key",
   ["neo-tree.nvim"] = "neotree",
   ["nvim-treesitter-context"] = "treesitter_context",
-
-  -- ["alpha-nvim"] = "alpha",
-  -- ["blink.cmp"] = "blink_cmp",
-  -- ["flash.nvim"] = "flash",
-  -- ["hop.nvim"] = "hop",
-  -- ["indent-blankline.nvim"] = "indent_blankline",
-  -- ["indentmini.nvim"] = "indentmini",
-  -- ["lazy.nvim"] = "lazy",
-  -- ["lspsaga.nvim"] = "lspsaga",
-  -- ["mason.nvim"] = "mason",
-  -- ["mini.animate"] = "mini_animate",
-  -- ["mini.files"] = "mini_files",
-  -- ["mini.icons"] = "mini_icons",
-  -- ["mini.indentscope"] = "mini_indentscope",
-  -- ["mini.starter"] = "mini_starter",
-  -- ["neorg"] = "neorg",
-  -- ["noice.nvim"] = "noice",
-  -- ["nvim-navic"] = "navic",
-  -- ["nvim-cmp"] = "cmp",
-  -- ["nvim-notify"] = "notify",
-  -- ["rainbow-delimeters"] = "rainbow_delimiters",
+  ["snacks.nvim"] = "snacks",
+  ["telescope.nvim"] = "telescope",
+  ["which-key.nvim"] = "which_key",
 }
 
 local me = debug.getinfo(1, "S").source:sub(2)
