@@ -6,6 +6,7 @@ M.plugins = {
   ["CopilotChat.nvim"] = "copilotchat",
   ["dashboard-nvim"] = "dashboard",
   ["gitsigns.nvim"] = "gitsigns",
+  ["lazy.nvim"] = "lazy",
   ["neo-tree.nvim"] = "neotree",
   ["nvim-treesitter-context"] = "treesitter_context",
   ["snacks.nvim"] = "snacks",

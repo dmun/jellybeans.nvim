@@ -70,4 +70,8 @@ palette.diag = {
   ok = palette.ok,
 }
 
+palette.fg = palette.foreground
+palette.bg = palette.background
+palette.none = "NONE"
+
 return palette
