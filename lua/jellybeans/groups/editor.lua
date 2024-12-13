@@ -14,7 +14,7 @@ function M.get(c, opts)
     CurSearch = { bg = c.koromiko, fg = c.mine_shaft },
     IncSearch = { bg = c.koromiko, fg = c.mine_shaft },
     CursorColumn = { bg = c.grey_one },
-    CursorLine = { bg = c.grey_one },
+    CursorLine = { bg = Util.lighten(c.bg, 0.95) },
     Directory = { fg = c.brandy },
     DiffAdd = c.git.add,
     DiffChange = c.git.change,

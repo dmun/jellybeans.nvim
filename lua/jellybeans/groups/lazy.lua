@@ -4,8 +4,9 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    LazyButton = { bg = c.cod_grey, fg = c.alto },
-    LazyProgressDone = { bold = true, fg = c.wewak },
+    LazyNormal = { bg = c.bg, fg = c.alto },
+    LazyButton = { bg = c.grey_three, fg = c.alto },
+    LazyProgressDone = { bold = true, fg = c.raw_sienna },
     LazyProgressTodo = { bold = true, fg = c.ship_cove },
   }
 end
