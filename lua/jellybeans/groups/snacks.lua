@@ -8,6 +8,18 @@ function M.get(c, opts)
     SnacksNormalNC = { bg = c.bg },
     SnacksBackdrop = { bg = c.bg },
 
+    SnacksIndent = { fg = c.grey_three },
+    SnacksIndentChunk = { fg = c.grey_chateau },
+    SnacksIndentScope = { fg = c.grey_chateau },
+    SnacksIndent1 = { bg = c.bg, fg = c.perano },
+    SnacksIndent2 = { bg = c.bg, fg = c.biloba_flower },
+    SnacksIndent3 = { bg = c.bg, fg = c.wewak },
+    SnacksIndent4 = { bg = c.bg, fg = c.perano },
+    SnacksIndent5 = { bg = c.bg, fg = c.biloba_flower },
+    SnacksIndent6 = { bg = c.bg, fg = c.wewak },
+    SnacksIndent7 = { bg = c.bg, fg = c.perano },
+    SnacksIndent8 = { bg = c.bg, fg = c.biloba_flower },
+
     SnacksDashboardNormal = { bg = c.bg },
     SnacksDashboardDesc = { bg = c.bg, fg = c.biloba_flower },
     SnacksDashboardFile = { bg = c.bg, fg = c.koromiko },
