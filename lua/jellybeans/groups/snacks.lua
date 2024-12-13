@@ -4,7 +4,9 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    SnacksNormal = { bg = c.cod_grey },
+    SnacksNormal = { bg = c.bg },
+    SnacksNormalNC = { bg = c.bg },
+    SnacksBackdrop = { bg = c.bg },
   }
 end
 

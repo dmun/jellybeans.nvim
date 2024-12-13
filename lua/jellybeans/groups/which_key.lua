@@ -4,12 +4,15 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    WhichKey = { link = "NormalFloat" },
-    WhichKeyBorder = { link = "FloatBorder" },
-    WhichKeyGroup = { fg = c.wewak },
-    WhichKeySeparator = { fg = c.morning_glory },
-    WhichKeyDesc = { fg = c.wewak },
-    WhichKeyValue = { fg = c.morning_glory },
+    WhichKey = { bg = c.bg },
+    WhichKeyBorder = { bg = c.bg },
+    WhichKeyDesc = { bg = c.bg, fg = c.wewak },
+    WhichKeyGroup = { bg = c.bg, fg = c.biloba_flower },
+    WhichKeyIcon = { bg = c.bg },
+    WhichKeyNormal = { bg = c.bg },
+    WhichKeySeparator = { bg = c.bg, fg = c.morning_glory },
+    WhichKeyTitle = { bg = c.bg, fg = c.biloba_flower },
+    WhichKeyValue = { bg = c.bg, fg = c.morning_glory },
   }
 end
 
