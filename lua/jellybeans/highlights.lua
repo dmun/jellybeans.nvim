@@ -2,19 +2,34 @@ local M = {}
 
 ---@param opts? jellybeans.Config
 function M.setup(opts)
-  opts = require("jellybeans.config").extend(opts)
+  if not opts then
+    opts = require("jellybeans.config").opts
+  end
 
-  local colors = require("jellybeans.palettes").get_palette("jellybeans")
-  local groups = require("jellybeans.groups").setup(colors, opts)
+  -- Store current colorscheme name before clearing
+  local current_scheme = vim.g.colors_name
 
+  -- Clear existing highlights
   if vim.g.colors_name then
     vim.cmd("hi clear")
   end
 
-  vim.termguicolors = true
-  vim.background = "dark"
-  vim.g.colors_name = "jellybeans"
+  vim.opt.termguicolors = true
 
+  -- Set background before loading colors
+  vim.o.background = opts.style == "light" and "light" or "dark"
+  -- Restore colorscheme name immediately
+  vim.g.colors_name = current_scheme or "jellybeans"
+
+  local colors = require("jellybeans.palettes").get_palette("jellybeans", opts.style)
+  if not colors then
+    vim.notify("Failed to load jellybeans colorscheme", vim.log.levels.ERROR)
+    return
+  end
+
+  local groups = require("jellybeans.groups").setup(colors, opts)
+
+  -- Apply new highlights
   for group, hl in pairs(groups) do
     hl = type(hl) == "string" and { link = hl } or hl
     vim.api.nvim_set_hl(0, group, hl)
@@ -22,6 +37,11 @@ function M.setup(opts)
 
   if opts.terminal_colors then
     M.terminal(colors)
+  end
+
+  -- Call user's on_highlights callback
+  if opts.on_highlights then
+    opts.on_highlights(groups, colors)
   end
 
   return colors, groups, opts

@@ -1,7 +1,8 @@
 ---@class Palette
-palette = {
+local palette = {
   foreground = "#e8e8d3",
   background = "#151515",
+
   grey = "#888888",
   grey_one = "#1c1c1c",
   grey_two = "#f0f0f0",
@@ -73,5 +74,8 @@ palette.diag = {
 palette.fg = palette.foreground
 palette.bg = palette.background
 palette.none = "NONE"
+
+palette.float_bg = palette.gravel
+palette.float_border = palette.foreground
 
 return palette
