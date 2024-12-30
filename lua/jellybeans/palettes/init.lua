@@ -10,7 +10,6 @@ function M.get_palette(palette, style)
   local ok, color_palette = pcall(require, "jellybeans.palettes." .. type_palette)
   if not ok then
     vim.notify("Failed to load palette: " .. type_palette, vim.log.levels.ERROR)
-    -- Fallback to default dark theme
     return require("jellybeans.palettes.jellybeans")
   end
 
@@ -18,3 +17,4 @@ function M.get_palette(palette, style)
 end
 
 return M
+

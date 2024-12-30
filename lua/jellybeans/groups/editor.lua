@@ -4,7 +4,7 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    Normal = { fg = c.foreground, bg = c.background },
+    Normal = { fg = c.foreground, bg = opts.transparent and "NONE" or c.background },
     NormalFloat = { bg = c.float_bg },
     FloatBorder = { fg = c.float_border },
     FloatTitle = { bg = c.float_bg, fg = c.morning_glory },

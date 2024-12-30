@@ -43,7 +43,7 @@ function M.get(c, opts)
     ["@keyword.storage"] = "StorageClass",
     ["@label"] = { fg = c.morning_glory }, -- For labels: `label:` in C and `:label:` in Lua.
     ["@markup"] = "@none",
-    ["@markup.emphasis"] = { italic = true },
+    ["@markup.emphasis"] = { italic = opts.italics },
     ["@markup.environment"] = "Macro",
     ["@markup.environment.name"] = "Type",
     ["@markup.heading"] = "Title",
@@ -54,7 +54,7 @@ function M.get(c, opts)
     ["@markup.heading.4.markdown"] = "RenderMarkdwonH4Bg",
     ["@markup.heading.5.markdown"] = "RenderMarkdwonH5Bg",
     ["@markup.heading.6.markdown"] = "RenderMarkdwonH6Bg",
-    ["@markup.italic"] = { italic = true },
+    ["@markup.italic"] = { italic = opts.italics },
     ["@markup.link"] = { fg = c.tea_green },
     ["@markup.link.label"] = "SpecialChar",
     ["@markup.link.label.symbol"] = "Identifier",
@@ -103,7 +103,7 @@ function M.get(c, opts)
       -- style = opts.styles.variables
     }, -- Any variable name that does not have another highlight.
     ["@variable.member"] = { fg = c.alto }, -- For fields.
-    ["@variable.parameter"] = { fg = c.silver_rust, italic = true }, -- For parameters of a function.
+    ["@variable.parameter"] = { fg = c.silver_rust, italic = opts.italics }, -- For parameters of a function.
     ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.old_brick, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     -- JSON

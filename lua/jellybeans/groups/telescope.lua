@@ -4,10 +4,10 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    TelescopeNormal = { bg = c.background },
-    TelescopePromptNormal = { bg = c.background },
-    TelescopeResultsNormal = { bg = c.background },
-    TelescopePreviewNormal = { bg = c.background },
+    TelescopeNormal = { bg = opts.transparent and "NONE" or c.background },
+    TelescopePromptNormal = { bg = opts.transparent and "NONE" or c.background },
+    TelescopeResultsNormal = { bg = opts.transparent and "NONE" or c.background },
+    TelescopePreviewNormal = { bg = opts.transparent and "NONE" or c.background },
     TelescopePromptBorder = { fg = c.grey_three, bg = c.background },
     TelescopeResultsBorder = { fg = c.grey_three, bg = c.background },
     TelescopePreviewBorder = { fg = c.grey_three, bg = c.background },

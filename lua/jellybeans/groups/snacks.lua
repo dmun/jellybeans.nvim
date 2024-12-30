@@ -4,8 +4,8 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    SnacksNormal = { bg = c.bg },
-    SnacksNormalNC = { bg = c.bg },
+    SnacksNormal = { bg = opts.transparent and "NONE" or c.bg },
+    SnacksNormalNC = { bg = opts.transparent and "NONE" or c.bg },
     SnacksBackdrop = { bg = c.bg },
 
     SnacksIndent = { fg = c.grey_three },
@@ -20,7 +20,7 @@ function M.get(c, opts)
     SnacksIndent7 = { bg = c.bg, fg = c.perano },
     SnacksIndent8 = { bg = c.bg, fg = c.biloba_flower },
 
-    SnacksDashboardNormal = { bg = c.bg },
+    SnacksDashboardNormal = { bg = opts.transparent and "NONE" or c.bg },
     SnacksDashboardDesc = { bg = c.bg, fg = c.biloba_flower },
     SnacksDashboardFile = { bg = c.bg, fg = c.koromiko },
     SnacksDashboardDir = { bg = c.bg, fg = c.perano },
