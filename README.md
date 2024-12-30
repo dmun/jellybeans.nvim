@@ -5,13 +5,14 @@ A port of the jellybeans colorscheme for Neovim, written in Lua.
 **Note:** This colorscheme is very much a work in progress so breaking changes should be expected. If you find any issues, please report them. I don't have a lot of experience with colorschemes so pull requests are welcome.
 
 ![jellybeans](./images/theme.png)
+![jellybeans](./images/theme_light.png)
 
 ## ✨ Features
 
 - Written in Lua
 - Treesitter support
 - LSP support
-- Support for popular plugins
+- [Support for popular plugins](https://github.com/WTFox/jellybeans.nvim/tree/main/lua/jellybeans/groups)
 
 ## 📦 Installation
 
@@ -28,14 +29,21 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
-## 🔌 Plugin Support
+## Configuration Defaults
 
-- Treesitter
-- LSP
-- Telescope
-- NeoTree
-- Lualine
-- and more...
+```lua
+{
+  style = "dark", -- "dark" or "light"
+  transparent = false,
+  italics = true,
+  plugins = {
+    all = false,
+    auto = true, -- will read lazy.nvim and apply the colors for plugins that are installed
+  },
+  on_highlights = function(highlights, colors)
+  end,
+}
+```
 
 ### Lualine
 
@@ -48,6 +56,14 @@ require('lualine').setup {
     }
 }
 ```
+
+## 🔌 Extras Support
+
+- FZF
+- Wezterm
+- Windows Terminal
+- Yazi
+- and [more...](https://github.com/WTFox/jellybeans.nvim/tree/main/extras)
 
 ## Inspirations
 
