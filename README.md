@@ -30,7 +30,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
-## Configuration
+## 🛠️Configuration
 
 Jellybeans ships with the following defaults
 
@@ -92,12 +92,9 @@ require('lualine').setup {
 - Yazi
 - and [more...](https://github.com/WTFox/jellybeans.nvim/tree/main/extras)
 
-## Inspirations
+## 💕 Inspirations
 
 - [jellybeans.vim](https://github.com/nanotech/jellybeans.vim)
-
-## Acknowledgements
-
 - [tokyonight.nvim](https://gitub.com/folke/tokyonight.nvim) by [Folke](https://githubcom/folke)
 - [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
 - [jbeans](https://github.com/scajanus/jbeans) by [scajanus](https://github.com/scajanus)
