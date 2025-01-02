@@ -8,7 +8,7 @@ local M = {
 
 function M.reset()
   require("jellybeans.util").cache.clear()
-  local colors = require("jellybeans.palettes").get_palette(nil)
+  local colors = require("jellybeans.palettes").get_palette("jellybeans", { style = "dark" })
   M.globals.colors = colors
   M.globals.c = colors
 end
