@@ -30,7 +30,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
-## 🛠️Configuration
+## 🛠️ Configuration
 
 Jellybeans ships with the following defaults
 
