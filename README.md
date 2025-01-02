@@ -10,6 +10,7 @@ A port of the jellybeans colorscheme for Neovim, written in Lua.
 ## ✨ Features
 
 - Written in Lua
+- Highly configurable
 - Treesitter support
 - LSP support
 - [Support for popular plugins](https://github.com/WTFox/jellybeans.nvim/tree/main/lua/jellybeans/groups)
@@ -29,7 +30,9 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
-## Configuration Defaults
+## Configuration
+
+Jellybeans ships with the following defaults
 
 ```lua
 {
@@ -42,7 +45,31 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
   },
   on_highlights = function(highlights, colors)
   end,
+  on_colors = function(colors)
+  end,
 }
+```
+
+You can easily override the color palette. For example, here's how to change the background color:
+
+```lua
+  opts = {
+    on_colors = function(c)
+      local light_bg = "#ffffff"
+      local dark_bg = "#000000"
+      c.background = vim.o.background == "light" and light_bg or dark_bg
+    end,
+  }
+```
+
+If you want more control over highlight groups, that is also possible:
+
+```lua
+  opts = {
+    on_highlights = function(hl, c)
+      hl.Constant = { fg = "#00ff00", bold = true }
+    end,
+  },
 ```
 
 ### Lualine

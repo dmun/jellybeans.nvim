@@ -4,7 +4,8 @@ local M = {}
 ---@field style? "dark"|"light"
 ---@field transparent? boolean
 ---@field italics? boolean
----@field on_highlights fun(highlights: jellybeans.Highlights, colors: ColorScheme)
+---@field on_highlights? fun(highlights: jellybeans.Highlights, colors: ColorScheme)
+---@field on_colors? fun(colors: ColorScheme)
 M.defaults = {
   style = "dark",
   transparent = false,
@@ -14,6 +15,7 @@ M.defaults = {
     auto = true,
   },
   on_highlights = function(highlights, colors) end,
+  on_colors = function(colors) end,
 }
 
 ---@param opts? jellybeans.Config

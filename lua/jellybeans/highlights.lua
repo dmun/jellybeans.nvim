@@ -17,7 +17,7 @@ function M.setup(opts)
   vim.o.background = opts.style == "light" and "light" or "dark"
   vim.g.colors_name = current_scheme or "jellybeans"
 
-  local colors = require("jellybeans.palettes").get_palette("jellybeans", opts.style)
+  local colors = require("jellybeans.palettes").get_palette("jellybeans", opts)
   if not colors then
     vim.notify("Failed to load jellybeans colorscheme", vim.log.levels.ERROR)
     return
@@ -32,10 +32,6 @@ function M.setup(opts)
 
   if opts.terminal_colors then
     M.terminal(colors)
-  end
-
-  if opts.on_highlights then
-    opts.on_highlights(groups, colors)
   end
 
   return colors, groups, opts
