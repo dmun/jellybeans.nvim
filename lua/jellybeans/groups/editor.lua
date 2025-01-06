@@ -46,7 +46,7 @@ function M.get(c, opts)
     TabLineFill = { fg = c.regent_grey },
     TabLineSel = { fg = c.mantis, bg = c.total_black },
     Title = { fg = c.mantis },
-    Visual = { bg = c.tundora },
+    Visual = { bg = c.visual },
     WinSeparator = { fg = c.grey_one },
     GitSignsAddVirtLnInLine = c.git.add,
     GitSignsChangeVirtLnInLine = c.git.change,

@@ -73,6 +73,7 @@ palette.diag = {
   ok = palette.ok,
 }
 
+palette.visual = palette.grey_one
 palette.fg = palette.foreground
 palette.bg = palette.background
 palette.none = "NONE"
