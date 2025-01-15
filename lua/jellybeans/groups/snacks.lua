@@ -31,6 +31,14 @@ function M.get(c, opts)
     SnacksDashboardTerminal = { bg = c.bg },
     SnacksDashboardSpecial = { bg = c.bg, fg = c.goldenrod },
     SnacksDashboardTitle = { bg = c.bg, fg = c.perano },
+
+    SnacksPicker = { bg = c.bg },
+    SnacksPickerTitle = { bg = c.perano, fg = c.bg },
+    SnacksPickerBoxTitle = { bg = c.perano, fg = c.bg },
+    SnacksPickerInputTitle = { bg = c.biloba_flower, fg = c.bg },
+    SnacksPickerListTitle = { bg = c.koromiko, fg = c.bg },
+    SnacksPickerPreviewTitle = { bg = c.koromiko, fg = c.bg },
+    SnacksPickerBorder = { bg = c.bg },
   }
 end
 
