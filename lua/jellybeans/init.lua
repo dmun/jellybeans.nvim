@@ -1,5 +1,7 @@
 local M = {}
 
+M.version = "1.0.0" -- {x-release-please-version}
+
 local is_loading = false
 
 ---@param opts? jellybeans.Config

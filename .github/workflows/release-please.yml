@@ -15,8 +15,11 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
-          release-type: simple # We'll use simple since it's a Lua project
+          release-type: simple
           package-name: jellybeans.nvim
+          version-file: "lua/jellybeans/init.lua"
+          extra-files: |
+            lua/jellybeans/init.lua
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
           include-v-in-tag: true
@@ -25,9 +28,12 @@ jobs:
               {"type": "feat", "section": "Features", "hidden": false},
               {"type": "fix", "section": "Bug Fixes", "hidden": false},
               {"type": "perf", "section": "Performance Improvements", "hidden": false},
-              {"type": "revert", "section": "Reverts", "hidden": false},
-              {"type": "docs", "section": "Documentation", "hidden": false},
+              {"type": "refactor", "section": "Code Refactoring", "hidden": false},
               {"type": "style", "section": "Styles", "hidden": false},
+              {"type": "docs", "section": "Documentation", "hidden": false},
               {"type": "chore", "section": "Miscellaneous", "hidden": false},
-              {"type": "refactor", "section": "Code Refactoring", "hidden": false}
+              {"type": "test", "section": "Tests", "hidden": true},
+              {"type": "build", "section": "Build System", "hidden": true},
+              {"type": "ci", "section": "Continuous Integration", "hidden": true}
             ]
+          signoff: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
