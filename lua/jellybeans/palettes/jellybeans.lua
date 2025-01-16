@@ -72,8 +72,6 @@ palette.diag = {
 }
 
 palette.visual = palette.tundora
-palette.fg = palette.foreground
-palette.bg = palette.background
 palette.none = "NONE"
 
 palette.float_bg = palette.gravel

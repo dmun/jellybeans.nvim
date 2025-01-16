@@ -74,8 +74,6 @@ palette.diag = {
 }
 
 palette.visual = palette.grey_one
-palette.fg = palette.foreground
-palette.bg = palette.background
 palette.none = "NONE"
 
 palette.float_bg = palette.grey_three

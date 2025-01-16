@@ -17,6 +17,12 @@ function M.get_palette(palette, opts)
     opts.on_colors(colors)
   end
 
+  colors.bg = colors.background or colors.bg
+  colors.background = colors.bg
+
+  colors.fg = colors.foreground or colors.fg
+  colors.foreground = colors.fg
+
   return colors
 end
 
