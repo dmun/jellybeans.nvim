@@ -101,8 +101,6 @@ require('lualine').setup {
 
 ## 🌟 Star History
 
-## Star History
-
 <a href="https://star-history.com/#wtfox/jellybeans.nvim&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=wtfox/jellybeans.nvim&type=Date&theme=dark" />
