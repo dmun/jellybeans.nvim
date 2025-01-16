@@ -22,9 +22,11 @@ function M.get(c, opts)
     ["@function.call"] = "@function",
     ["@function.macro"] = "Macro",
     ["@function.method"] = "Function",
+    ["@function.htmldjango"] = "Function",
     ["@function.method.call"] = "@function.method",
     ["@keyword"] = { fg = c.biloba_flower },
     ["@keyword.conditional"] = "Conditional",
+    ["@keyword.conditional.htmldjango"] = "@function.method",
     ["@keyword.coroutine"] = "@keyword",
     ["@keyword.debug"] = "Debug",
     ["@keyword.directive"] = "PreProc",
@@ -82,6 +84,7 @@ function M.get(c, opts)
     ["@punctuation.delimiter"] = { fg = c.morning_glory }, -- For delimiters ie: `.`
     ["@punctuation.special"] = { fg = c.morning_glory }, -- For special symbols (e.g. `{}` in string interpolation)
     ["@punctuation.special.markdown"] = { fg = c.raw_sienna }, -- For special symbols (e.g. `{}` in string interpolation)
+    ["@punctuation.special.htmldjango"] = { fg = c.raw_sienna },
     ["@string"] = "String",
     ["@string.documentation"] = "@comment",
     ["@string.escape"] = { fg = c.biloba_flower }, -- For escape characters within a string.
