@@ -98,3 +98,7 @@ require('lualine').setup {
 - [tokyonight.nvim](https://gitub.com/folke/tokyonight.nvim) by [Folke](https://githubcom/folke)
 - [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
 - [jbeans](https://github.com/scajanus/jbeans) by [scajanus](https://github.com/scajanus)
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=wtfox/jellybeans.nvim&type=Date)](https://star-history.com/#wtfox/jellybeans.nvim&Date)
