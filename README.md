@@ -75,50 +75,50 @@ If you want more control over highlight groups, that is also possible:
 
 ```lua
 require("jellybeans").setup({
-on_highlights = function(hl, c)
-  local prompt = c.grey_one
-  hl.TelescopeNormal = {
-    bg = c.background,
-    fg = c.grey_two,
-  }
-  hl.TelescopeBorder = {
-    bg = c.background,
-    fg = c.background,
-  }
-  hl.TelescopePromptNormal = {
-    bg = prompt,
-  }
-  hl.TelescopePromptBorder = {
-    bg = prompt,
-    fg = prompt,
-  }
-  hl.TelescopePromptPrefix = {
-    bg = prompt,
-  }
-  hl.TelescopePromptCounter = {
-    bg = prompt,
-  }
-  hl.TelescopePreviewBorder = {
-    bg = c.background,
-    fg = c.background,
-  }
-  hl.TelescopeResultsBorder = {
-    bg = c.background,
-    fg = c.background,
-  }
-  hl.TelescopePromptTitle = {
-    bg = c.biloba_flower,
-    fg = prompt,
-  }
-  hl.TelescopePreviewTitle = {
-    bg = c.wewak,
-    fg = prompt,
-  }
-  hl.TelescopeResultsTitle = {
-    bg = c.koromiko,
-    fg = prompt,
-  }
-end,
+  on_highlights = function(hl, c)
+    local prompt = c.grey_one
+    hl.TelescopeNormal = {
+      bg = c.background,
+      fg = c.grey_two,
+    }
+    hl.TelescopeBorder = {
+      bg = c.background,
+      fg = c.background,
+    }
+    hl.TelescopePromptNormal = {
+      bg = prompt,
+    }
+    hl.TelescopePromptBorder = {
+      bg = prompt,
+      fg = prompt,
+    }
+    hl.TelescopePromptPrefix = {
+      bg = prompt,
+    }
+    hl.TelescopePromptCounter = {
+      bg = prompt,
+    }
+    hl.TelescopePreviewBorder = {
+      bg = c.background,
+      fg = c.background,
+    }
+    hl.TelescopeResultsBorder = {
+      bg = c.background,
+      fg = c.background,
+    }
+    hl.TelescopePromptTitle = {
+      bg = c.biloba_flower,
+      fg = prompt,
+    }
+    hl.TelescopePreviewTitle = {
+      bg = c.wewak,
+      fg = prompt,
+    }
+    hl.TelescopeResultsTitle = {
+      bg = c.koromiko,
+      fg = prompt,
+    }
+  end,
 })
 ```
 
