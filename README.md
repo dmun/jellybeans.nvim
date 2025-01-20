@@ -70,6 +70,60 @@ If you want more control over highlight groups, that is also possible:
   },
 ```
 
+<details>
+  <summary>Borderless Telescope</summary>
+
+```lua
+require("jellybeans").setup({
+on_highlights = function(hl, c)
+  local prompt = c.grey_one
+  hl.TelescopeNormal = {
+  bg = c.background,
+  fg = c.grey_two,
+  }
+  hl.TelescopeBorder = {
+  bg = c.background,
+  fg = c.background,
+  }
+  hl.TelescopePromptNormal = {
+  bg = prompt,
+  }
+  hl.TelescopePromptBorder = {
+  bg = prompt,
+  fg = prompt,
+  }
+  hl.TelescopePromptPrefix = {
+  bg = prompt,
+  }
+  hl.TelescopePromptCounter = {
+  bg = prompt,
+  }
+  hl.TelescopePreviewBorder = {
+  bg = c.background,
+  fg = c.background,
+  }
+  hl.TelescopeResultsBorder = {
+  bg = c.background,
+  fg = c.background,
+  }
+  hl.TelescopePromptTitle = {
+  bg = c.biloba_flower,
+  fg = prompt,
+  }
+  hl.TelescopePreviewTitle = {
+  bg = c.wewak,
+  fg = prompt,
+  }
+  hl.TelescopeResultsTitle = {
+  bg = c.koromiko,
+  fg = prompt,
+  }
+end,
+})
+```
+
+</details>
+
 ### Lualine
 
 The theme includes a [Lualine](https://github.com/nvim-lualine/lualine.nvim) theme. To enable it:
@@ -85,6 +139,7 @@ require('lualine').setup {
 ## 🔌 Extras Support
 
 - FZF
+- Ghostty
 - Wezterm
 - Windows Terminal
 - Yazi
