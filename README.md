@@ -151,7 +151,13 @@ require('lualine').setup {
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) by [Folke](https://githubcom/folke)
 - [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
 - [jbeans](https://github.com/scajanus/jbeans) by [scajanus](https://github.com/scajanus)
-<<<<<<< Updated upstream
+## 🤝 Contributors
+
+<a href="https://github.com/wtfox/jellybeans.nvim/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=wtfox/jellybeans.nvim" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 ## 🌟 Star History
 
@@ -162,12 +168,4 @@ require('lualine').setup {
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=wtfox/jellybeans.nvim&type=Date" />
  </picture>
 </a>
-=======
-## 🤝 Contributors
 
-<a href="https://github.com/wtfox/jellybeans.nvim/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=wtfox/jellybeans.nvim" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
->>>>>>> Stashed changes
