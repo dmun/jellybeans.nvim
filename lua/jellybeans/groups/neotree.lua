@@ -21,6 +21,7 @@ function M.get(c, opts)
     NeoTreeGitStaged = { fg = c.tea_green },
     NeoTreeFloatBorder = { bg = c.background, fg = c.background },
     NeoTreeFloatTitle = { bg = c.total_black, fg = c.foreground },
+    NeoTreeDimText = { link = "Comment" },
   }
 end
 
