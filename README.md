@@ -3,6 +3,8 @@
 A port of the jellybeans colorscheme for Neovim, written in Lua.
 
 ![jellybeans](./images/theme.png)
+![picker](./images/picker.png)
+
 ![jellybeans](./images/theme_light.png)
 
 ## ✨ Features
