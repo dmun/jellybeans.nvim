@@ -9,8 +9,8 @@ function M.get(c, opts)
     GrappleName = { fg = c.perano },
     GrappleNoExist = { fg = c.error },
     GrappleCurrent = { fg = c.koromiko, bold = true },
-    GrappleFloat = { bg = c.bg },
-    GrappleBorder = { fg = c.bg },
+    GrappleFloat = { bg = c.background },
+    GrappleBorder = { fg = c.background },
     GrappleTitle = { fg = c.perano },
     GrappleFooter = { fg = c.biloba_flower },
   }
