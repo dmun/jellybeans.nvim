@@ -37,7 +37,7 @@ Jellybeans ships with the following defaults
   style = "dark", -- "dark" or "light"
   transparent = false,
   italics = true,
-  flat_ui = true, -- toggles "flat UI" for Telescope and Snacks.picker
+  flat_ui = true, -- toggles "flat UI" for pickers
   plugins = {
     all = false,
     auto = true, -- will read lazy.nvim and apply the colors for plugins that are installed
@@ -98,6 +98,7 @@ require('lualine').setup {
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) by [Folke](https://githubcom/folke)
 - [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
 - [jbeans](https://github.com/scajanus/jbeans) by [scajanus](https://github.com/scajanus)
+
 ## 🤝 Contributors
 
 <a href="https://github.com/wtfox/jellybeans.nvim/graphs/contributors">
@@ -115,4 +116,3 @@ Made with [contrib.rocks](https://contrib.rocks).
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=wtfox/jellybeans.nvim&type=Date" />
  </picture>
 </a>
-
