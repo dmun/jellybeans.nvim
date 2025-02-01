@@ -37,6 +37,7 @@ Jellybeans ships with the following defaults
   style = "dark", -- "dark" or "light"
   transparent = false,
   italics = true,
+  flat_ui = true, -- toggles "flat UI" for Telescope and Snacks.picker
   plugins = {
     all = false,
     auto = true, -- will read lazy.nvim and apply the colors for plugins that are installed
@@ -69,112 +70,6 @@ If you want more control over highlight groups, that is also possible:
     end,
   },
 ```
-
-<details>
-  <summary>Borderless Snacks Picker</summary>
-
-```lua
-require("jellybeans").setup({
-  on_highlights = function(hl, c)
-    local prompt = c.mine_shaft
-    hl.SnacksPickerBorder = {
-      fg = c.background,
-      bg = c.background,
-    }
-    hl.SnacksPickerInput = {
-      fg = c.foreground,
-      bg = prompt,
-    }
-    hl.SnacksPickerInputBorder = {
-      fg = prompt,
-      bg = prompt,
-    }
-    hl.SnacksPickerBoxBorder = {
-      fg = prompt,
-      bg = prompt,
-    }
-    hl.SnacksPickerBoxTitle = {
-      fg = prompt,
-      bg = c.koromiko,
-    }
-    hl.SnacksPickerTitle = {
-      fg = c.foreground,
-      bg = prompt,
-    }
-    hl.SnacksPickerList = {
-      bg = prompt,
-    }
-    hl.SnacksPickerPrompt = {
-      fg = c.koromiko,
-      bg = prompt,
-    }
-    hl.SnacksPickerPreviewTitle = {
-      fg = c.background,
-      bg = c.biloba_flower,
-    }
-    hl.SnacksPickerFlag = {
-      bg = c.koromiko,
-      fg = c.ripe_plum,
-    }
-  end,
-})
-```
-
-</details>
-
-<details>
-  <summary>Borderless Telescope</summary>
-
-```lua
-require("jellybeans").setup({
-  on_highlights = function(hl, c)
-    local prompt = c.grey_one
-    hl.TelescopeNormal = {
-      bg = c.background,
-      fg = c.grey_two,
-    }
-    hl.TelescopeBorder = {
-      bg = c.background,
-      fg = c.background,
-    }
-    hl.TelescopePromptNormal = {
-      bg = prompt,
-    }
-    hl.TelescopePromptBorder = {
-      bg = prompt,
-      fg = prompt,
-    }
-    hl.TelescopePromptPrefix = {
-      bg = prompt,
-    }
-    hl.TelescopePromptCounter = {
-      bg = prompt,
-    }
-    hl.TelescopePreviewBorder = {
-      bg = c.background,
-      fg = c.background,
-    }
-    hl.TelescopeResultsBorder = {
-      bg = c.background,
-      fg = c.background,
-    }
-    hl.TelescopePromptTitle = {
-      bg = c.biloba_flower,
-      fg = prompt,
-    }
-    hl.TelescopePreviewTitle = {
-      bg = c.wewak,
-      fg = prompt,
-    }
-    hl.TelescopeResultsTitle = {
-      bg = c.koromiko,
-      fg = prompt,
-    }
-  end,
-})
-```
-
-</details>
 
 ### Lualine
 

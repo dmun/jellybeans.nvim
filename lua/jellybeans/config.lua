@@ -4,12 +4,14 @@ local M = {}
 ---@field style? "dark"|"light"
 ---@field transparent? boolean
 ---@field italics? boolean
+---@field flat_ui? boolean
 ---@field on_highlights? fun(highlights: jellybeans.Highlights, colors: ColorScheme)
 ---@field on_colors? fun(colors: ColorScheme)
 M.defaults = {
   style = "dark",
   transparent = false,
   italics = true,
+  flat_ui = true,
   plugins = {
     all = false,
     auto = true,
