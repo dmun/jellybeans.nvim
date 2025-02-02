@@ -7,6 +7,7 @@ M.plugins = {
   ["dashboard-nvim"] = "dashboard",
   ["gitsigns.nvim"] = "gitsigns",
   ["grapple.nvim"] = "grapple",
+  ["fzf-lua"] = "fzf_lua",
   ["incline.nvim"] = "incline",
   ["lazy.nvim"] = "lazy",
   ["neo-tree.nvim"] = "neotree",
