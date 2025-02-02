@@ -1,7 +1,12 @@
 local M = {
   module = "jellybeans",
   colorscheme = "jellybeans",
-  opts = { plugins = { all = true } },
+  opts = {
+    flat_ui = true,
+    plugins = {
+      all = true,
+    },
+  },
   globals = { vim = vim },
   cache = {}, ---@type table<string, boolean>
 }
