@@ -46,3 +46,9 @@ luac.out
 
 # End of https://www.toptal.com/developers/gitignore/api/lua
 
+extras/palette_mapper/*.png
+extras/palette_mapper/*.jpg
+extras/palette_mapper/*.jpeg
+extras/palette_mapper/*.Identifier
+extras/palette_mapper/*.quarantine
+
