@@ -5,32 +5,20 @@ local M = {}
 ---@param c Palette
 local function bordered_picker(c)
   return {
-    SnacksPicker = { bg = c.background },
-    SnacksPickerTitle = { bg = c.background, fg = c.perano },
-    SnacksPickerBoxTitle = { bg = c.background, fg = c.perano },
-    SnacksPickerInputTitle = { bg = c.background, fg = c.biloba_flower },
-    SnacksPickerListTitle = { bg = c.background, fg = c.koromiko },
+    SnacksPickerBorder = { fg = c.grey, bg = c.background },
     SnacksPickerPreviewTitle = { bg = c.background, fg = c.koromiko },
-    SnacksPickerBorder = { bg = c.background },
-    SnacksPickerToggle = { bg = c.background, fg = c.perano },
+    SnacksPickerTitle = { bg = c.background, fg = c.perano },
+    SnacksPickerToggle = { bg = c.background, fg = c.raw_sienna },
   }
 end
 
 ---@param c Palette
 local function flat_picker(c)
-  local prompt = c.mine_shaft
   return {
     SnacksPickerBorder = { fg = c.background, bg = c.background },
-    SnacksPickerInput = { fg = c.foreground, bg = prompt },
-    SnacksPickerInputBorder = { fg = prompt, bg = prompt },
-    SnacksPickerBoxBorder = { fg = prompt, bg = prompt },
-    SnacksPickerTitle = { fg = c.foreground, bg = prompt },
-    SnacksPickerBoxTitle = { fg = prompt, bg = c.perano },
-    SnacksPickerList = { bg = prompt },
-    SnacksPickerPrompt = { fg = c.koromiko, bg = prompt },
     SnacksPickerPreviewTitle = { fg = c.background, bg = c.koromiko },
-    SnacksPickerPreview = { bg = c.background },
-    SnacksPickerToggle = { bg = c.perano, fg = c.background },
+    SnacksPickerTitle = { bg = c.perano, fg = c.background },
+    SnacksPickerToggle = { bg = c.perano, fg = c.raw_sienna },
   }
 end
 
@@ -41,6 +29,7 @@ function M.get(c, opts)
   if opts.flat_ui then
     picker_hl = flat_picker(c)
   end
+
   return vim.tbl_extend("keep", picker_hl, {
     SnacksNormal = { bg = opts.transparent and "NONE" or c.background },
     SnacksNormalNC = { bg = opts.transparent and "NONE" or c.background },
@@ -69,6 +58,11 @@ function M.get(c, opts)
     SnacksDashboardTerminal = { bg = c.background },
     SnacksDashboardSpecial = { bg = c.background, fg = c.goldenrod },
     SnacksDashboardTitle = { bg = c.background, fg = c.perano },
+
+    SnacksPickerInput = { fg = c.foreground, bg = c.background },
+    SnacksPickerList = { bg = c.background },
+    SnacksPickerPreview = { bg = c.background },
+    SnacksPickerDirectory = { fg = c.perano },
   })
 end
 
