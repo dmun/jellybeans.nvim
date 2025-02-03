@@ -24,7 +24,7 @@ local function flat_picker(c)
     SnacksPickerInput = { fg = c.foreground, bg = prompt },
     SnacksPickerInputBorder = { fg = prompt, bg = prompt },
     SnacksPickerBoxBorder = { fg = prompt, bg = prompt },
-    SnacksPickerTitle = { fg = c.foreground, bg = prompt },
+    SnacksPickerTitle = { fg = c.background, bg = c.perano },
     SnacksPickerBoxTitle = { fg = prompt, bg = c.perano },
     SnacksPickerList = { bg = prompt },
     SnacksPickerPrompt = { fg = c.koromiko, bg = prompt },
@@ -70,8 +70,8 @@ function M.get(c, opts)
     SnacksDashboardSpecial = { bg = c.background, fg = c.goldenrod },
     SnacksDashboardTitle = { bg = c.background, fg = c.perano },
 
-    SnacksPickerDirectory = { fg = c.morning_glory },
-    SnacksPickerFile = { fg = c.alto },
+    SnacksPickerDirectory = { fg = c.perano },
+    SnacksPickerFile = { fg = c.foreground },
   })
 end
 
