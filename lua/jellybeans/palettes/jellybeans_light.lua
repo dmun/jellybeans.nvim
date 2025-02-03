@@ -1,3 +1,5 @@
+local Util = require("jellybeans.util")
+
 ---@class Palette
 local palette = {
   foreground = "#262626",
@@ -17,7 +19,7 @@ local palette = {
   alto = "#444444",
   gravel = "#d0ccd1",
   boulder = "#777777",
-  cocoa_brown = "#f8f0f0",
+  cocoa_brown = Util.lighten("#d7af87", 0.4),
   grey_chateau = "#505860",
   bright_grey = "#e8e8e8",
   shuttle_grey = "#939da6",
@@ -51,18 +53,26 @@ local palette = {
   dell = "#437019",
   calypso = "#2B5B77",
 
-  error = "#c00000",
+  error = "#ff3333",
   warning = "#a66510",
   info = "#1670af",
   hint = "#775533",
   ok = "#386014",
 }
 
+palette.cursor_line = {
+  bg = Util.darken(palette.background, 0.95),
+}
+
+palette.cursor_line_nr = {
+  fg = "#000000",
+}
+
 palette.git = {
-  add = { bg = "#e6ffe6" },
-  delete = { bg = "#ffe8e8" },
-  change = { bg = "#f0f0ff" },
-  text = { bg = palette.grey_three },
+  add = { bg = palette.tea_green },
+  delete = { bg = palette.error },
+  change = { bg = palette.info },
+  text = { bg = palette.none },
 }
 
 palette.diag = {

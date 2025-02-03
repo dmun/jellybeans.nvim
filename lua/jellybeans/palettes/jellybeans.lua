@@ -1,3 +1,5 @@
+local Util = require("jellybeans.util")
+
 ---@class Palette
 local palette = {
   foreground = "#e8e8d3",
@@ -49,11 +51,20 @@ local palette = {
   tea_green = "#d2ebbe",
   dell = "#437019",
   calypso = "#2B5B77",
+
   error = "#ff0000",
   warning = "#ffaf00",
   info = "#87d7ff",
   hint = "#d7af87",
   ok = "#afd787",
+}
+
+palette.cursor_line = {
+  bg = Util.lighten(palette.background, 0.95),
+}
+
+palette.cursor_line_nr = {
+  fg = palette.silver_rust,
 }
 
 palette.git = {
