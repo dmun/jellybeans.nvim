@@ -74,6 +74,26 @@ function M.get(c, opts)
 
     SnacksPickerDirectory = { fg = c.perano },
     SnacksPickerFile = { fg = c.foreground },
+
+    SnacksIconProperty = {
+      bg = opts.transparent and "NONE" or c.background,
+    },
+
+    SnacksScratchTitle = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.perano,
+    },
+    SnacksScratchDesc = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.biloba_flower,
+    },
+    SnacksScratchFooter = {
+      bg = opts.transparent and "NONE" or c.background,
+    },
+    SnacksScratchKey = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.koromiko,
+    },
   })
 end
 
