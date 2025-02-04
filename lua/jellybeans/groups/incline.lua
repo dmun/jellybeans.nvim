@@ -4,8 +4,14 @@ local M = {}
 
 function M.get(c, opts)
   return {
-    InclineNormal = { fg = c.grey, bg = opts.transparent and "NONE" or c.background },
-    InclineNormalNC = { fg = c.grey, bg = opts.transparent and "NONE" or c.background },
+    InclineNormal = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.grey,
+    },
+    InclineNormalNC = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.grey,
+    },
   }
 end
 

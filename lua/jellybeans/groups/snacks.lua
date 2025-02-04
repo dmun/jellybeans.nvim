@@ -3,21 +3,23 @@ local Util = require("jellybeans.util")
 local M = {}
 
 ---@param c Palette
-local function bordered_picker(c)
+---@param opts jellybeans.Config
+local function bordered_picker(c, opts)
   return {
-    SnacksPicker = { bg = c.background },
-    SnacksPickerTitle = { bg = c.background, fg = c.perano },
-    SnacksPickerBoxTitle = { bg = c.background, fg = c.perano },
-    SnacksPickerInputTitle = { bg = c.background, fg = c.biloba_flower },
-    SnacksPickerListTitle = { bg = c.background, fg = c.koromiko },
-    SnacksPickerPreviewTitle = { bg = c.background, fg = c.koromiko },
-    -- SnacksPickerBorder = { bg = c.background },
-    SnacksPickerToggle = { bg = c.background, fg = c.perano },
+    SnacksPicker = { bg = opts.transparent == true and "NONE" or c.background },
+    SnacksPickerTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.perano },
+    SnacksPickerBoxTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.perano },
+    SnacksPickerInputTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.biloba_flower },
+    SnacksPickerListTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.koromiko },
+    SnacksPickerPreviewTitle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.koromiko },
+    SnacksPickerBorder = { bg = opts.transparent == true and "NONE" or c.background },
+    SnacksPickerToggle = { bg = opts.transparent == true and "NONE" or c.background, fg = c.perano },
   }
 end
 
 ---@param c Palette
-local function flat_picker(c)
+---@param opts jellybeans.Config
+local function flat_picker(c, opts)
   local prompt = c.mine_shaft
   return {
     SnacksPickerBorder = { fg = c.background, bg = c.background },
@@ -37,9 +39,9 @@ end
 ---@param c Palette
 ---@param opts jellybeans.Config
 function M.get(c, opts)
-  local picker_hl = bordered_picker(c)
+  local picker_hl = bordered_picker(c, opts)
   if opts.flat_ui then
-    picker_hl = flat_picker(c)
+    picker_hl = flat_picker(c, opts)
   end
   return vim.tbl_extend("keep", picker_hl, {
     SnacksNormal = { bg = opts.transparent and "NONE" or c.background },
@@ -59,16 +61,16 @@ function M.get(c, opts)
     SnacksIndent8 = { bg = c.background, fg = c.biloba_flower },
 
     SnacksDashboardNormal = { bg = opts.transparent and "NONE" or c.background },
-    SnacksDashboardDesc = { bg = c.background, fg = c.biloba_flower },
-    SnacksDashboardFile = { bg = c.background, fg = c.koromiko },
-    SnacksDashboardDir = { bg = c.background, fg = c.perano },
-    SnacksDashboardFooter = { bg = c.background, fg = c.biloba_flower },
-    SnacksDashboardHeader = { bg = c.background, fg = c.perano },
-    SnacksDashboardIcon = { bg = c.background, fg = c.raw_sienna },
-    SnacksDashboardKey = { bg = c.background, fg = c.wewak },
-    SnacksDashboardTerminal = { bg = c.background },
-    SnacksDashboardSpecial = { bg = c.background, fg = c.goldenrod },
-    SnacksDashboardTitle = { bg = c.background, fg = c.perano },
+    SnacksDashboardDesc = { bg = opts.transparent and "NONE" or c.background, fg = c.biloba_flower },
+    SnacksDashboardFile = { bg = opts.transparent and "NONE" or c.background, fg = c.koromiko },
+    SnacksDashboardDir = { bg = opts.transparent and "NONE" or c.background, fg = c.perano },
+    SnacksDashboardFooter = { bg = opts.transparent and "NONE" or c.background, fg = c.biloba_flower },
+    SnacksDashboardHeader = { bg = opts.transparent and "NONE" or c.background, fg = c.perano },
+    SnacksDashboardIcon = { bg = opts.transparent and "NONE" or c.background, fg = c.raw_sienna },
+    SnacksDashboardKey = { bg = opts.transparent and "NONE" or c.background, fg = c.wewak },
+    SnacksDashboardTerminal = { bg = opts.transparent and "NONE" or c.background },
+    SnacksDashboardSpecial = { bg = opts.transparent and "NONE" or c.background, fg = c.goldenrod },
+    SnacksDashboardTitle = { bg = opts.transparent and "NONE" or c.background, fg = c.perano },
 
     SnacksPickerDirectory = { fg = c.perano },
     SnacksPickerFile = { fg = c.foreground },
