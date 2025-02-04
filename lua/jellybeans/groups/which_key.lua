@@ -8,7 +8,7 @@ local function get_flat_hl(c, opts)
   return {
     WhichKeyBorder = {
       bg = opts.transparent and "NONE" or c.background,
-      fg = opts.transparent and "NONE" or c.background,
+      fg = c.background,
     },
   }
 end
@@ -23,7 +23,10 @@ function M.get(c, opts)
   return vim.tbl_extend("keep", flat_hl, {
     WhichKey = { bg = opts.transparent and "NONE" or c.background },
     WhichKeyNormal = { bg = opts.transparent and "NONE" or c.background },
-    WhichKeyBorder = { bg = opts.transparent and "NONE" or c.background },
+    WhichKeyBorder = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.biloba_flower,
+    },
     WhichKeyDesc = { bg = opts.transparent and "NONE" or c.background, fg = c.wewak },
     WhichKeyGroup = { bg = opts.transparent and "NONE" or c.background, fg = c.biloba_flower },
     WhichKeyIcon = { bg = opts.transparent and "NONE" or c.background },
