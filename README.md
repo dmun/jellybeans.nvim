@@ -2,10 +2,11 @@
 
 A port of the jellybeans colorscheme for Neovim, written in Lua.
 
-![jellybeans](./images/theme.png)
-![picker](./images/picker.png)
+![dark_1](./images/dark_1.png)
+![dark_2](./images/dark_2.png)
 
-![jellybeans](./images/theme_light.png)
+![light_1](./images/light_1.png)
+![light_2](./images/light_2.png)
 
 ## ✨ Features
 
