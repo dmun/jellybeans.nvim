@@ -2,8 +2,25 @@ local Util = require("jellybeans.util")
 
 local M = {}
 
-function M.get(c, opts)
+---@param c Palette
+---@param opts jellybeans.Config
+local function get_flat_hl(c, opts)
   return {
+    WhichKeyBorder = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = opts.transparent and "NONE" or c.background,
+    },
+  }
+end
+
+---@param c Palette
+---@param opts jellybeans.Config
+function M.get(c, opts)
+  local flat_hl = {}
+  if opts.flat_ui then
+    flat_hl = get_flat_hl(c, opts)
+  end
+  return vim.tbl_extend("keep", flat_hl, {
     WhichKey = { bg = opts.transparent and "NONE" or c.background },
     WhichKeyNormal = { bg = opts.transparent and "NONE" or c.background },
     WhichKeyBorder = { bg = opts.transparent and "NONE" or c.background },
@@ -13,7 +30,7 @@ function M.get(c, opts)
     WhichKeySeparator = { bg = opts.transparent and "NONE" or c.background, fg = c.morning_glory },
     WhichKeyTitle = { bg = opts.transparent and "NONE" or c.background, fg = c.biloba_flower },
     WhichKeyValue = { bg = opts.transparent and "NONE" or c.background, fg = c.morning_glory },
-  }
+  })
 end
 
 return M
