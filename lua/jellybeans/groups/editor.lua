@@ -32,7 +32,11 @@ function M.get(c, opts)
     ModeMsg = { fg = c.highland },
     NonText = { fg = c.scorpion },
     Pmenu = { bg = c.grey_three },
-    PmenuSel = { bg = c.calypso, bold = true },
+    PmenuSel = {
+      fg = vim.o.background == "light" and c.background or c.foreground,
+      bg = c.calypso,
+      bold = true,
+    },
     Question = { fg = c.mantis },
     QuickFixLine = { bg = c.bright_grey },
     Search = { fg = c.wewak, bg = c.cocoa_brown },
