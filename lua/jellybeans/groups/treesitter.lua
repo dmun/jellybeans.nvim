@@ -86,7 +86,7 @@ function M.get(c, opts)
     ["@property.toml"] = "Operator",
     ["@punctuation.bracket"] = { fg = c.morning_glory }, -- For brackets and parens.
     ["@punctuation.delimiter"] = { fg = c.morning_glory }, -- For delimiters ie: `.`
-    ["@punctuation.special"] = { fg = c.morning_glory }, -- For special symbols (e.g. `{}` in string interpolation)
+    ["@punctuation.special"] = "SpecialChar",
     ["@punctuation.special.markdown"] = { fg = c.raw_sienna }, -- For special symbols (e.g. `{}` in string interpolation)
     ["@punctuation.special.htmldjango"] = { fg = c.raw_sienna },
     ["@string"] = "String",
