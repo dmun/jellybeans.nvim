@@ -36,6 +36,10 @@ function M.get(c, opts)
       fg = c.biloba_flower,
       -- style = opts.styles.functions
     }, -- For keywords used to define a function.
+    ["@keyword.function.go"] = {
+      fg = c.biloba_flower,
+      -- style = opts.styles.functions
+    }, -- For keywords used to define a function.
     ["@keyword.import"] = "Include",
     ["@keyword.import.python"] = { fg = c.biloba_flower },
     ["@keyword.operator"] = "@operator",
@@ -116,7 +120,6 @@ function M.get(c, opts)
     ["@tag.builtin.tsx"] = { fg = c.morning_glory },
 
     -- GO
-    ["@keyword.function.go"] = "Function",
     ["@keyword.coroutine.go"] = "Exception",
 
     -- Rust

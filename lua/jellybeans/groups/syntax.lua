@@ -19,6 +19,7 @@ function M.get(c, opts)
     PreProc = { fg = c.ship_cove },
     Property = { fg = c.foreground, italic = opts.italics },
     Special = { fg = c.biloba_flower },
+    SpecialChar = { fg = c.raw_sienna },
     Statement = { fg = c.morning_glory },
     String = { fg = c.green_smoke },
     Structure = { fg = c.morning_glory },
