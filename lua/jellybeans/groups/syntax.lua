@@ -25,7 +25,7 @@ function M.get(c, opts)
     Structure = { fg = c.morning_glory },
     Todo = { fg = c.silver },
     Type = { fg = c.koromiko, italic = opts.italics },
-    Underlined = { underline = true },
+    Underlined = { undercurl = true },
     Variable = { fg = c.alto },
 
     -- LSP
