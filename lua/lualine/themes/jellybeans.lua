@@ -17,7 +17,7 @@ local function get_theme()
       c = { fg = c.grey_two, bg = c.background },
     },
     insert = {
-      a = { fg = c.total_black, bg = c.mantis, gui = "bold" },
+      a = { fg = c.total_black, bg = c.green_smoke, gui = "bold" },
       b = { fg = c.foreground, bg = c.grey_one },
       c = { fg = c.grey_two, bg = c.background },
     },
@@ -32,7 +32,7 @@ local function get_theme()
       c = { fg = c.grey_two, bg = c.background },
     },
     command = {
-      a = { fg = c.total_black, bg = c.goldenrod, gui = "bold" },
+      a = { fg = c.total_black, bg = c.biloba_flower, gui = "bold" },
       b = { fg = c.foreground, bg = c.grey_one },
       c = { fg = c.grey_two, bg = c.background },
     },
