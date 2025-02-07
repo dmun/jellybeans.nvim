@@ -64,15 +64,15 @@ function M.get(c, opts)
     GitSignsDeleteVirtLnInLine = c.git.delete,
 
     DiagnosticError = { fg = c.diag.error },
-    DiagnosticUnderlineError = { undercurl = true, fg = c.diag.error },
+    DiagnosticUnderlineError = { undercurl = true, sp = c.diag.error },
     DiagnosticWarn = { fg = c.diag.warning },
-    DiagnosticUnderlineWarn = { undercurl = true, fg = c.diag.warning },
+    DiagnosticUnderlineWarn = { undercurl = true, sp = c.diag.warning },
     DiagnosticInfo = { fg = c.diag.info },
-    DiagnosticUnderlineInfo = { undercurl = true, fg = c.diag.info },
+    DiagnosticUnderlineInfo = { undercurl = true, sp = c.diag.info },
     DiagnosticHint = { fg = c.diag.hint },
-    DiagnosticUnderlineHint = { undercurl = true, fg = c.diag.hint },
+    DiagnosticUnderlineHint = { undercurl = true, sp = c.diag.hint },
     DiagnosticOk = { fg = c.diag.ok },
-    DiagnosticUnderlineOk = { undercurl = true, fg = c.diag.ok },
+    DiagnosticUnderlineOk = { undercurl = true, sp = c.diag.ok },
   }
 end
 
