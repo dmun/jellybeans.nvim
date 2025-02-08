@@ -3,6 +3,7 @@ local M = {
   colorscheme = "jellybeans",
   opts = {
     flat_ui = true,
+    italics = false,
     plugins = {
       all = true,
     },

@@ -9,10 +9,10 @@ function M.get(c, opts)
       fg = c.foreground,
     },
     NormalFloat = {
-      bg = opts.transparent and "NONE" or c.float_bg,
+      bg = c.background,
     },
-    FloatBorder = { fg = c.float_border },
-    FloatTitle = { bg = c.float_bg, fg = c.morning_glory },
+    FloatBorder = { fg = c.morning_glory },
+    FloatTitle = { fg = c.morning_glory, bold = true },
     ColorColumn = { bg = c.total_black },
     Conceal = { fg = c.morning_glory },
     Cursor = { bg = c.alto, fg = c.background },
@@ -38,7 +38,6 @@ function M.get(c, opts)
     NonText = { fg = c.scorpion },
     Pmenu = { bg = c.grey_three },
     PmenuSel = {
-      fg = vim.o.background == "light" and c.background or c.foreground,
       bg = c.calypso,
       bold = true,
     },

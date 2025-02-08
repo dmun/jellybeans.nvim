@@ -3,7 +3,7 @@ local Util = require("jellybeans.util")
 ---@class Palette
 local palette = {
   foreground = "#e8e8d3",
-  background = "#151515",
+  background = "#121212",
 
   grey = "#888888",
   grey_one = "#1c1c1c",
