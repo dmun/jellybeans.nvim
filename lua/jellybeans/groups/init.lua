@@ -16,6 +16,7 @@ M.plugins = {
   ["telescope.nvim"] = "telescope",
   ["which-key.nvim"] = "which_key",
   ["vim-illuminate"] = "illuminate",
+  ["blink.cmp"] = "blink",
 }
 
 local me = debug.getinfo(1, "S").source:sub(2)

@@ -64,14 +64,19 @@ function M.get(c, opts)
 
     DiagnosticError = { fg = c.diag.error },
     DiagnosticUnderlineError = { undercurl = true, sp = c.diag.error },
+    DiagnosticFloatingError = { fg = c.diag.error, bold = true },
     DiagnosticWarn = { fg = c.diag.warning },
     DiagnosticUnderlineWarn = { undercurl = true, sp = c.diag.warning },
+    DiagnosticFloatingWarn = { fg = c.diag.warning, bold = true },
     DiagnosticInfo = { fg = c.diag.info },
     DiagnosticUnderlineInfo = { undercurl = true, sp = c.diag.info },
+    DiagnosticFloatingInfo = { fg = c.diag.info, bold = true },
     DiagnosticHint = { fg = c.diag.hint },
     DiagnosticUnderlineHint = { undercurl = true, sp = c.diag.hint },
+    DiagnosticFloatingHint = { fg = c.diag.hint, bold = true },
     DiagnosticOk = { fg = c.diag.ok },
     DiagnosticUnderlineOk = { undercurl = true, sp = c.diag.ok },
+    DiagnosticFloatingOk = { fg = c.diag.ok, bold = true },
   }
 end
 
