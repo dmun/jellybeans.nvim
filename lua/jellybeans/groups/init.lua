@@ -3,6 +3,7 @@ local Util = require("jellybeans.util")
 local M = {}
 
 M.plugins = {
+  ["blink.cmp"] = "blink",
   ["CopilotChat.nvim"] = "copilotchat",
   ["dashboard-nvim"] = "dashboard",
   ["gitsigns.nvim"] = "gitsigns",
