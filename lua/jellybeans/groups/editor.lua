@@ -73,6 +73,7 @@ function M.get(c, opts)
     DiagnosticUnderlineHint = { undercurl = true, sp = c.diag.hint },
     DiagnosticOk = { fg = c.diag.ok },
     DiagnosticUnderlineOk = { undercurl = true, sp = c.diag.ok },
+    DiagnosticUnnecessary = { fg = c.grey, undercurl = true },
   }
 end
 
