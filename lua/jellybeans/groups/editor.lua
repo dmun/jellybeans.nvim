@@ -11,6 +11,10 @@ function M.get(c, opts)
     NormalFloat = {
       bg = opts.transparent and "NONE" or c.float_bg,
     },
+    NormalNC = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.foreground,
+    },
     FloatBorder = { fg = c.float_border },
     FloatTitle = { bg = c.float_bg, fg = c.morning_glory },
     ColorColumn = { bg = c.total_black },
