@@ -11,8 +11,12 @@ function M.get(c, opts)
     NormalFloat = {
       bg = c.background,
     },
-    FloatBorder = { fg = c.morning_glory },
-    FloatTitle = { fg = c.morning_glory, bold = true },
+    NormalNC = {
+      bg = opts.transparent and "NONE" or c.background,
+      fg = c.foreground,
+    },
+    FloatBorder = { fg = c.float_border },
+    FloatTitle = { bg = c.float_bg, fg = c.morning_glory },
     ColorColumn = { bg = c.total_black },
     Conceal = { fg = c.morning_glory },
     Cursor = { bg = c.alto, fg = c.background },
@@ -77,6 +81,7 @@ function M.get(c, opts)
     DiagnosticOk = { fg = c.diag.ok },
     DiagnosticUnderlineOk = { undercurl = true, sp = c.diag.ok },
     DiagnosticFloatingOk = { fg = c.diag.ok, bold = true },
+    DiagnosticUnnecessary = { fg = c.grey, undercurl = true },
   }
 end
 
